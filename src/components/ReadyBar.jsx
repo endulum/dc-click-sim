@@ -5,7 +5,7 @@ export default function ReadyBar({ isSimRunning, startSim }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log(isSimRunning ? 'Sim is running.' : 'Sim is NOT running.');
+    // console.log(isSimRunning ? 'Sim is running.' : 'Sim is NOT running.');
     if (!isSimRunning) {
       setIsCounting(false);
       setCount(0);
@@ -13,7 +13,7 @@ export default function ReadyBar({ isSimRunning, startSim }) {
   }, [isSimRunning]);
 
   useEffect(() => {
-    console.log(`Count is ${count}, Counting is ${isCounting}`);
+    // console.log(`Count is ${count}, Counting is ${isCounting}`);
 
     if (count === 3) {
       setIsCounting(false);
