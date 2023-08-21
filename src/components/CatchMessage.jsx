@@ -12,7 +12,7 @@ export default function CatchMessage({ time, caughtBreed }) {
         {' '}
         seconds!
       </p>
-      <small>Can you do better? Hover over the top bar try again.</small>
+      <small>I wonder if you can do better!</small>
     </div>
   );
 }

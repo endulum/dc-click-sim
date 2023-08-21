@@ -7,7 +7,7 @@ export default function Eggs({
     <div className="sim">
       <p>
         You arrive at a purely hypothetical cave and see many large dragons scattered about,
-        some with hatchlings. Nearby, there is a pile of several eggs.
+        some with hatchlings. Nearby, there is a pile of several purely hypothetical eggs.
       </p>
       <p>
         You don’t want to disturb the dragons, but some of the eggs are far enough away

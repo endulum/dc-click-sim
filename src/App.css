@@ -1,4 +1,14 @@
 @font-face {
+  font-family: 'Roboto Condensed';
+  src: url(./assets/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url(./assets/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
   font-family: 'PT Serif';
   src: url(./assets/PTSerif-Regular.ttf);
 }
@@ -14,11 +24,29 @@ html, body, #root {
   height: 100%;
 }
 
+body {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(./assets/alum.png);
+}
+
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+main {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  max-width: min-content;
+  padding: 25px;
+  border-radius: 5px;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+b {
+  font-weight: normal;
+  font-family: 'Roboto Condensed Bold', Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -28,17 +56,14 @@ html, body, #root {
   background-color: #ecddba;
   width: 750px;
   padding: 20px;
+  margin-top: 20px;
 }
 
-.readybar {
-  border: 1px solid black;
+.readybar, .catch-message {
+  padding: 15px;
   width: 100%;
-  padding: 10px;
-}
-
-.catch-message {
+  background-color: white;
   border: 1px solid black;
-  padding: 10px;
 }
 
 .sim {
