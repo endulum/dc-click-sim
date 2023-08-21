@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'PT Serif';
+  src: url(./assets/PTSerif-Regular.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -20,15 +25,47 @@ html, body, #root {
   border: 1px solid black;
   padding: 15px;
   text-align: center;
+  background-color: #ecddba;
+  width: 750px;
+  padding: 20px;
 }
 
 .readybar {
   border: 1px solid black;
-  width: 500px;
+  width: 100%;
   padding: 10px;
 }
 
 .catch-message {
   border: 1px solid black;
   padding: 10px;
+}
+
+.sim {
+  font-size: 14px;
+  font-family: "PT Serif", "Times New Roman", "Times", serif;
+}
+
+.sim p {
+  margin: 8px 0;
+  text-indent: 1em;
+  text-align: left;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.sim-eggs {
+  display: grid;
+  grid-template-columns: repeat(3, 235px);
+  min-height: 100px;
+}
+
+.target-egg {
+  appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }

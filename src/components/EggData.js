@@ -157,7 +157,6 @@ const randomCommonDescriptions = [
   'This egg is dark with light speckles...or maybe it\'s light with dark speckles?',
   'This opalescent egg shimmers in the moonlight.',
   'This egg can\'t seem to make up its mind what color it is.',
-  'This scaled egg is surrounded by the others.',
   'This shiny egg gives you a headache when you get close.',
   'This egg has spots that glow brightly when touched.',
   'This egg glitters oddly in the light.',
@@ -213,7 +212,7 @@ const rareDescriptions = [
     description: 'This egg gives off a beautiful glow.',
   }, {
     breed: 'Gold',
-    description: 'This egg is very reflectve, almost metallic-looking.',
+    description: 'This egg is very reflective, almost metallic-looking.',
   }, {
     breed: 'Staterae',
     description: 'Mana flows like a current through this glassy egg.',

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function ReadyBar({ isSimRunning, startSim }) {
+export default function ReadyBar({ isSimRunning, startSim, breedToCatch }) {
   const [isCounting, setIsCounting] = useState(false);
   const [count, setCount] = useState(0);
 
@@ -52,7 +52,13 @@ export default function ReadyBar({ isSimRunning, startSim }) {
         </p>
       ) }
       { !isCounting && count === 3 && (
-        <p>Catch the egg!</p>
+        <p>
+          Catch the
+          {' '}
+          <b>{breedToCatch}</b>
+          {' '}
+          egg!
+        </p>
       )}
     </div>
   );

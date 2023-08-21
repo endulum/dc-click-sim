@@ -1,14 +1,18 @@
-export default function CatchMessage({ time }) {
+export default function CatchMessage({ time, caughtBreed }) {
   return (
     <div className="catch-message">
       <p>
-        You caught the egg in
+        You caught the
         {' '}
-        <b>{time.toFixed(2)}</b>
+        <b>{caughtBreed}</b>
+        {' '}
+        egg in
+        {' '}
+        <b>{time.toFixed(3)}</b>
         {' '}
         seconds!
       </p>
-      <p>Can you do better?</p>
+      <small>Can you do better? Hover over the top bar try again.</small>
     </div>
   );
 }

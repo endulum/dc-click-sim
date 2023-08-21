@@ -3,11 +3,16 @@ import { useEffect, useState } from 'react';
 import ReadyBar from './ReadyBar';
 import Eggs from './Eggs';
 import CatchMessage from './CatchMessage';
+import getDescriptions from './EggData';
 
 export default function Wrapper() {
   const [isSimRunning, setIsSimRunning] = useState(false);
   const [isEggCaught, setIsEggCaught] = useState(false);
   const [eggCatchTime, setEggCatchTime] = useState(null);
+  const [caughtBreed, setCaughtBreed] = useState(null);
+
+  const descriptions = getDescriptions();
+  const breedToCatch = descriptions.find((description) => description.breed !== 'Common').breed;
 
   let startTime = null;
 
@@ -34,6 +39,7 @@ export default function Wrapper() {
       <ReadyBar
         isSimRunning={isSimRunning}
         startSim={() => setIsSimRunning(true)}
+        breedToCatch={breedToCatch}
       />
       {/* { isSimRunning && (
         <p>
@@ -42,10 +48,13 @@ export default function Wrapper() {
       )} */}
       <Eggs
         isSimRunning={isSimRunning}
-        stopSim={() => setIsSimRunning(false)}
+        stopSim={() => getTime()}
+        catchEgg={() => setIsEggCaught(true)}
+        setCaughtBreed={setCaughtBreed}
+        eggDescriptions={descriptions}
       />
       { isEggCaught && (
-        <CatchMessage time={eggCatchTime} />
+        <CatchMessage time={eggCatchTime} caughtBreed={caughtBreed} />
       )}
     </div>
   );
