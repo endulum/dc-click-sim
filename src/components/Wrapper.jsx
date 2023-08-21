@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import ReadyBar from './ReadyBar';
+import Eggs from './Eggs';
 import CatchMessage from './CatchMessage';
 
 export default function Wrapper() {
@@ -34,11 +35,15 @@ export default function Wrapper() {
         isSimRunning={isSimRunning}
         startSim={() => setIsSimRunning(true)}
       />
-      { isSimRunning && (
+      {/* { isSimRunning && (
         <p>
           <button type="button" id="target-egg" onClick={getTime}>Catch me!</button>
         </p>
-      )}
+      )} */}
+      <Eggs
+        isSimRunning={isSimRunning}
+        stopSim={() => setIsSimRunning(false)}
+      />
       { isEggCaught && (
         <CatchMessage time={eggCatchTime} />
       )}
