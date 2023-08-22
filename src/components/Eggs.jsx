@@ -28,7 +28,7 @@ export default function Eggs({
                 <img src={MysteryEgg} alt="A mystery egg." />
               </button>
             ) : (
-              <img src={MysteryEgg} className={!isSimRunning && 'semi'} alt="A mystery egg." />
+              <img src={MysteryEgg} className={!isSimRunning ? 'semi' : ''} alt="A mystery egg." />
             )}
             <br />
             {isSimRunning ? (
