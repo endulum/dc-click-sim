@@ -3,17 +3,17 @@
   src: url(../assets/DIN.ttf);
 }
 
-.wrapper {
+.theme-portalLight.wrapper {
   width: 870px;
-  background-image: url(../assets/bg.png);
+  background-image: url(../assets/portalLight.png);
 }
 
-.sim {
+.theme-portalLight .sim {
   font-size: 14px;
   font-family: Arial, sans-serif;
 }
 
-.sim-eggs {
+.theme-portalLight .sim-eggs {
   grid-template-columns: repeat(3, 277px);
   font-family: "DIN";
   font-weight: bold;

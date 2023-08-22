@@ -5,7 +5,7 @@ import Eggs from './Eggs';
 import CatchMessage from './CatchMessage';
 import getDescriptions from './EggData';
 
-export default function Wrapper() {
+export default function Wrapper({ themeName }) {
   const [isSimRunning, setIsSimRunning] = useState(false);
   const [isEggCaught, setIsEggCaught] = useState(false);
   const [eggCatchTime, setEggCatchTime] = useState(null);
@@ -33,7 +33,7 @@ export default function Wrapper() {
 
   return (
     <div
-      className="wrapper"
+      className={`${themeName} wrapper`}
       onMouseLeave={() => setIsSimRunning(false)}
     >
       <ReadyBar

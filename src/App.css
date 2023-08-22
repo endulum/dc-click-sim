@@ -46,17 +46,29 @@ b {
 
 .wrapper {
   border: 1px solid black;
-  padding: 15px;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+  position: relative;
+  min-height: 400px;
+  padding-top: 75px;
 }
 
 .readybar, .catch-message {
   padding: 15px;
-  width: 100%;
+  width: calc(100% - 45px);
   background-color: white;
   border: 1px solid black;
+  position: absolute;
+  z-index: 9;
+}
+
+.readybar {
+  top: 20px;
+}
+
+.catch-message {
+  bottom: 20px;
 }
 
 .sim p {
@@ -80,5 +92,14 @@ b {
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+.semi {
+  opacity: 0.5;
+}
+
+.select {
+  text-align: center;
+  margin-top: 20px;
 }
 

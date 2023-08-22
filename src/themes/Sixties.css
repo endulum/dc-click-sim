@@ -1,13 +1,33 @@
-.wrapper {
+.theme-sixties.wrapper {
   width: 800px;
-  background-color: #fdfdfd;
+  background: url(../assets/sixties.jpg);
+  /* box-shadow: inset 0 0 50px rgba(0,0,0,0.2),inset 0 0 10px rgba(0,0,0,0.2),inset 0 0 200px rgba(0,0,0,0.05); */
+  position: relative;
 }
 
-.sim {
+.theme-sixties.wrapper::before, .theme-sixties.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+}
+
+.theme-sixties.wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.125), rgba(0,0,0,0));
+}
+
+.theme-sixties.wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0.125), rgba(0,0,0,0));
+}
+
+.theme-sixties .sim {
   font-size: 11pt;
   font-family: "Times New Roman", "Times", serif;
 }
 
-.sim-eggs {
+.theme-sixties .sim-eggs {
   grid-template-columns: repeat(3, 253px);
 }
