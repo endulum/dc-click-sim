@@ -7,7 +7,9 @@
     "dev": "vite",
     "host": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -22,6 +24,7 @@
     "eslint": "^8.46.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^6.0.0",
     "vite": "^4.4.5",
     "vite-plugin-eslint": "^1.8.1"
   }
