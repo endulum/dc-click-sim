@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'PT Serif';
+  src: url(../assets/PTSerif-Regular.ttf);
+}
+
+.wrapper {
+  width: 750px;
+  background-color: #ecddba;
+}
+
+.sim {
+  font-size: 14px;
+  font-family: "PT Serif", "Times New Roman", "Times", serif;
+}
+
+.sim-eggs {
+  grid-template-columns: repeat(3, 235px);
+}
