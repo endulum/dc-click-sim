@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'FQ';
+  src: url('../assets/default/FQ.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('../assets/default/PT.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  src: url('../assets/default/PT-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url('../assets/portal/DIN.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DIN Bold';
+  src: url('../assets/portal/DIN-Bold.woff2') format('woff2');
+}
+
+body {
+  background-color: #18181b;
+  color: #d4d4d8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  padding: 1rem;
+  margin: auto;
+  max-width: min-content;
+  > * {
+    margin-bottom: 1rem;
+  }
+}
+
+p a {
+  color: #06b6d4;
+}
+
+.simulator {
+  border: 1px solid black;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  color: black;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h1,
+  b,
+  a {
+    font-weight: normal;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    text-indent: 1em;
+    text-align: left;
+  }
+
+  .eggs {
+    width: 100%;
+    image-rendering: pixelated;
+    height: 50px;
+    clear: both;
+  }
+
+  .egg {
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    img {
+      display: inline;
+    }
+  }
+
+  &.default {
+    width: calc(705px + 2rem);
+    background: url(../assets/default/scroll.jpg);
+    background-size: cover;
+    font: 14px/19.6px 'PT Serif', 'Times New Roman', serif;
+
+    h1 {
+      font-family: 'FQ', 'PT Serif', 'Times New Roman', serif;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    b {
+      font-family: 'PT Serif Bold', 'Times New Roman', serif;
+    }
+
+    a {
+      color: #44300b;
+    }
+
+    ul {
+      margin: 14px 0;
+    }
+  }
+
+  &.portal {
+    width: calc(834px + 2rem);
+    background: url(../assets/portal/tile.png);
+    background-repeat: repeat;
+    font: 14px 'Arial', sans-serif;
+
+    h1 {
+      color: white;
+      background-color: #52a5c6;
+      border: 1px solid #468fac;
+      padding: 3px 6px 3px 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.7em;
+      line-height: 28px;
+      font-size: 28px;
+      width: min-content;
+      font-family: 'DIN';
+    }
+
+    a {
+      color: #2db2e6;
+      text-decoration: none;
+      b {
+        font-weight: bold;
+      }
+    }
+
+    .egg {
+      font-family: 'DIN Bold';
+    }
+  }
+
+  &.sixties {
+    width: calc(760px + 2rem);
+    background: url(../assets/sixties/paper.jpg);
+    background-repeat: repeat;
+    font: 11pt 'Times New Roman', 'Times', serif;
+
+    h1 {
+      font-weight: bold;
+    }
+
+    ul {
+      margin: 14px 0;
+    }
+
+    a {
+      color: black;
+      b {
+        font-weight: bold;
+      }
+    }
+  }
+}
