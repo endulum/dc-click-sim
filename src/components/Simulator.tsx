@@ -1,32 +1,41 @@
-import { useState } from 'react';
+import MysteryEgg from '../assets/egg.gif';
 
-import Egg from '../assets/egg.gif';
-
-type Biome = 'alpine' | 'coast' | 'desert' | 'forest' | 'jungle' | 'volcano';
+import { type Biome } from '../types';
+import { useSimulator } from './useSimulator';
 
 export function Simulator({ theme }: { theme: string }) {
-  const [currentBiome, setCurrentBiome] = useState<Biome>('alpine');
+  const { biome, eggs, stats, handleBiomeChange, handleEggCatch, startGame } =
+    useSimulator();
 
   return (
     <div className={`simulator ${theme}`}>
       {/* biome header */}
-      <h1>{currentBiome[0].toUpperCase() + currentBiome.substring(1)}</h1>
+      <div>
+        <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
+        {eggs && stats.current ? (
+          <p>
+            Find the <b>{stats.current.rareEgg.breed}</b>.
+          </p>
+        ) : (
+          <button onClick={() => startGame()}>Start</button>
+        )}
+      </div>
 
       {/* biome links */}
       <ul>
         {['Alpine', 'Coast', 'Desert', 'Forest', 'Jungle', 'Volcano'].map(
-          (biome) => (
-            <li key={biome}>
+          (biomeString) => (
+            <li key={biomeString}>
               <a
-                href={`#${biome.toLowerCase()}`}
+                href={`#${biomeString.toLowerCase()}`}
                 onClick={() => {
-                  setCurrentBiome(biome.toLowerCase() as Biome);
+                  handleBiomeChange(biomeString.toLowerCase() as Biome);
                 }}
               >
-                {biome.toLowerCase() === currentBiome ? (
-                  <b>{biome}</b>
+                {biomeString.toLowerCase() === biome ? (
+                  <b>{biomeString}</b>
                 ) : (
-                  <span>{biome}</span>
+                  <span>{biomeString}</span>
                 )}
               </a>
             </li>
@@ -49,15 +58,32 @@ export function Simulator({ theme }: { theme: string }) {
 
         {/* eggs */}
         <div className="eggs">
-          {['???', '???', '???'].map((egg) => (
-            <div className="egg" key={egg}>
-              <a href="#egg">
-                <img src={Egg} alt="An egg." />
-              </a>
-              <br />
-              <span>{egg}</span>
-            </div>
-          ))}
+          {eggs && eggs[biome]
+            ? eggs[biome].map((egg) => (
+                <div className="egg" key={egg.breed}>
+                  <a
+                    href="#egg"
+                    onClick={() => {
+                      handleEggCatch(egg);
+                    }}
+                  >
+                    <img src={MysteryEgg} alt="An egg." />
+                  </a>
+                  <br />
+                  <span>{egg.description}</span>
+                </div>
+              ))
+            : Array(3)
+                .fill('???')
+                .map((egg, index) => (
+                  <div className="egg disabled" key={egg + index}>
+                    <a href="#egg">
+                      <img src={MysteryEgg} />
+                    </a>
+                    <br />
+                    <span>{egg}</span>
+                  </div>
+                ))}
         </div>
       </section>
     </div>
