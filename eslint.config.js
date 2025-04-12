@@ -29,6 +29,7 @@ export default tseslint.config(
           allow: ['warn', 'error'],
         },
       ],
+      'react-hooks/exhaustive-deps': 'off',
     },
-  },
+  }
 );

@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import MysteryEgg from '../assets/egg.gif';
 
 import { type Biome } from '../types';
@@ -6,6 +8,20 @@ import { useSimulator } from './useSimulator';
 export function Simulator({ theme }: { theme: string }) {
   const { biome, eggs, stats, handleBiomeChange, handleEggCatch, startGame } =
     useSimulator();
+
+  const handleRefresh = (e: KeyboardEvent) => {
+    if (e.code === 'Space') {
+      e.preventDefault();
+      if (!stats.current) startGame();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keypress', handleRefresh);
+    return () => {
+      document.removeEventListener('keypress', handleRefresh);
+    };
+  }, []);
 
   return (
     <div className={`simulator ${theme}`}>
