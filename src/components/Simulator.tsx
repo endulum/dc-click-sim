@@ -39,16 +39,7 @@ export function Simulator({ theme }: { theme: string }) {
   return (
     <div className={`simulator ${theme}`} ref={simulatorRef}>
       {/* biome header */}
-      <div>
-        <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
-        {eggs && stats.current ? (
-          <p>
-            Find the <b>{stats.current.rareEgg.breed}</b>.
-          </p>
-        ) : (
-          <button onClick={() => startGame()}>Start</button>
-        )}
-      </div>
+      <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
 
       {/* biome links */}
       <ul>
@@ -115,6 +106,30 @@ export function Simulator({ theme }: { theme: string }) {
                 ))}
         </div>
       </section>
+
+      {/* game status message */}
+      <div className="simulator-status">
+        {/* if no game... */}
+        {stats.current ? (
+          <p>
+            Find the <b>{stats.current.rareEgg.breed}</b> egg!
+          </p>
+        ) : (
+          <p>
+            Start the game by{' '}
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                startGame();
+              }}
+            >
+              clicking here
+            </a>{' '}
+            or hitting the spacebar.
+          </p>
+        )}
+      </div>
     </div>
   );
 }
