@@ -27,25 +27,26 @@ export function App() {
         visits taken, etc.
       </p>
 
-      <Simulator theme={theme} />
+      <div className="space-between">
+        <label htmlFor="theme">
+          <span>Select theme: </span>
+          <select
+            id="theme"
+            onChange={(e) => {
+              setTheme(e.target.value as Theme);
+            }}
+          >
+            <option value="default">Default</option>
+            <option value="portal">Portal 2 Light</option>
+            <option value="sixties">1960's</option>
+          </select>
+        </label>
+        <small>
+          All background, font, and image assets belong to Dragon Cave.
+        </small>
+      </div>
 
-      <label htmlFor="theme">
-        <span>Select theme: </span>
-        <select
-          id="theme"
-          onChange={(e) => {
-            setTheme(e.target.value as Theme);
-          }}
-        >
-          <option value="default">Default</option>
-          <option value="portal">Portal 2 Light</option>
-          <option value="sixties">1960's</option>
-        </select>
-      </label>
-      <br />
-      <small>
-        All background, font, and image assets belong to Dragon Cave.
-      </small>
+      <Simulator theme={theme} />
     </>
   );
 }

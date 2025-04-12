@@ -115,7 +115,7 @@ export function Simulator({ theme }: { theme: string }) {
           </p>
         ) : (
           <p>
-            Start the game by{' '}
+            Start the round by{' '}
             <a
               href="#"
               onClick={(e) => {
