@@ -1,0 +1,2046 @@
+{
+  "alpine": [
+    {
+      "breed": "Aeon Wyvern",
+      "description": "It’s almost like time is distorted around this egg."
+    },
+    {
+      "breed": "Aeria Gloris",
+      "description": "This crystalline egg almost looks like you could reach into its depths."
+    },
+    {
+      "breed": "Aether Wyvern",
+      "description": "Wind gusts around this egg."
+    },
+    {
+      "breed": "Albino",
+      "description": "You can see the baby dragon curled up inside this translucent egg."
+    },
+    {
+      "breed": "Alcedine Wyvern",
+      "description": "The brilliant blue spots on this egg stand out."
+    },
+    {
+      "breed": "Almerald",
+      "description": "This glossy green egg is rather warm."
+    },
+    {
+      "breed": "Astaarus",
+      "description": "This egg reminds you of the night sky."
+    },
+    {
+      "breed": "Balloon",
+      "description": "This light egg is floating in the air."
+    },
+    {
+      "breed": "Black",
+      "description": "This egg has a faint green glow around it."
+    },
+    {
+      "breed": "Black Truffle",
+      "description": "This egg has a pleasant, musky smell."
+    },
+    {
+      "breed": "Bleeding Moon",
+      "description": "This egg shines brilliantly in moonlight, and is covered in red spots."
+    },
+    {
+      "breed": "Blue-Banded",
+      "description": "This egg is covered in thick blue stripes."
+    },
+    {
+      "breed": "Bolt",
+      "description": "This egg has a striking pattern."
+    },
+    {
+      "breed": "Boreal",
+      "description": "This egg is covered in pale blue spots."
+    },
+    {
+      "breed": "Brumous",
+      "description": "This egg’s glittering shell sometimes gets lost in fog."
+    },
+    {
+      "breed": "Brute",
+      "description": "This egg is unusually large and heavy."
+    },
+    {
+      "breed": "Cassare",
+      "description": "This egg makes you feel a bit uneasy."
+    },
+    {
+      "breed": "Celestial",
+      "description": "This translucent egg shines like starlight."
+    },
+    {
+      "breed": "Chaliuba",
+      "description": "This egg is covered in black and white stripes."
+    },
+    {
+      "breed": "Cloudplume",
+      "description": "This soft egg is carefully nestled in feathers and snow."
+    },
+    {
+      "breed": "Crystalline",
+      "description": "This icy egg sparkles with frost."
+    },
+    {
+      "breed": "Dark Lumina",
+      "description": "This egg shines coldly in the moonlight."
+    },
+    {
+      "breed": "Delta",
+      "description": "This speckled egg has deep blue spots."
+    },
+    {
+      "breed": "Diamondwing",
+      "description": "This egg shines like a diamond."
+    },
+    {
+      "breed": "Electric",
+      "description": "Bright sparks glide across the surface of this egg’s shell."
+    },
+    {
+      "breed": "Elux Lucis",
+      "description": "Starlight shimmers across this egg’s iridescent shell."
+    },
+    {
+      "breed": "Equinox",
+      "description": "This egg shakes slightly when taken out of the light."
+    },
+    {
+      "breed": "Fell",
+      "description": "This mottled egg looks positively ancient."
+    },
+    {
+      "breed": "Floret Wyvern (Iris)",
+      "description": "This shiny egg smells faintly like flowers."
+    },
+    {
+      "breed": "Frostbite",
+      "description": "Frost is creeping over this cold egg."
+    },
+    {
+      "breed": "Golden Wyvern",
+      "description": "This egg shimmers like gold."
+    },
+    {
+      "breed": "Harvest",
+      "description": "This heavy egg feels slightly warm."
+    },
+    {
+      "breed": "Ice",
+      "description": "This egg has icicles forming on it."
+    },
+    {
+      "breed": "Imperial Fleshcrowne",
+      "description": "This egg is hidden in the trees."
+    },
+    {
+      "breed": "Jaw Splitter Wyrm",
+      "description": "Something about this heavy egg unnerves you."
+    },
+    {
+      "breed": "Khusa",
+      "description": "This egg is smooth and shiny."
+    },
+    {
+      "breed": "Kingcrowne",
+      "description": "This shiny egg gives off an almost magical aura."
+    },
+    {
+      "breed": "Labradorite",
+      "description": "This shimmering egg was hidden far from the others."
+    },
+    {
+      "breed": "Lightstreak",
+      "description": "This egg glows vibrantly in the dark."
+    },
+    {
+      "breed": "Lumina",
+      "description": "This egg shines brightly in the sunlight."
+    },
+    {
+      "breed": "Lunar Herald",
+      "description": "This metallic egg shows faint iridescence in moonlight."
+    },
+    {
+      "breed": "Magi",
+      "description": "This egg has an orange aura radiating from it."
+    },
+    {
+      "breed": "Mint",
+      "description": "This egg is hidden behind the others, as if it is shy."
+    },
+    {
+      "breed": "Mirisia Amphiptere",
+      "description": "This egg emanates a peculiar smell."
+    },
+    {
+      "breed": "Nebula",
+      "description": "This egg glows with a brilliant radiance."
+    },
+    {
+      "breed": "Nhiostrife Wyvern",
+      "description": "This dull purple egg has two bright stripes on it."
+    },
+    {
+      "breed": "Nocturne",
+      "description": "This egg appears to be made of limestone."
+    },
+    {
+      "breed": "Oracle Wyrm",
+      "description": "It feels like this egg knew you were coming."
+    },
+    {
+      "breed": "Pillow",
+      "description": "This egg has a velvety texture."
+    },
+    {
+      "breed": "Pink",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Purple",
+      "description": "Wow, purple isn't a color of egg you expected to see."
+    },
+    {
+      "breed": "Pyralspite",
+      "description": "This egg feels like polished stone."
+    },
+    {
+      "breed": "Razorcrest Wyvern",
+      "description": "This blue and bronze egg piques your curiosity."
+    },
+    {
+      "breed": "Ridgewing",
+      "description": "A cool mountain breeze blows around this egg."
+    },
+    {
+      "breed": "Rift Wyrm",
+      "description": "This egg radiates an otherworldly chill."
+    },
+    {
+      "breed": "Royal Blue",
+      "description": "This egg shines in the moonlight."
+    },
+    {
+      "breed": "Sapphire",
+      "description": "This egg looks like a beautiful blue stone."
+    },
+    {
+      "breed": "Seasonal (Winter)",
+      "description": "The markings on this egg match the weather outside."
+    },
+    {
+      "breed": "Shumoga",
+      "description": "This striped egg has a rough, ridged texture."
+    },
+    {
+      "breed": "Siorghlas Wyvern",
+      "description": "This dark egg has a delicate shell that smells faintly of pine."
+    },
+    {
+      "breed": "Siyat",
+      "description": "This egg seems to be glowing in spots."
+    },
+    {
+      "breed": "Skystrider",
+      "description": "This plain blue egg almost seems to float."
+    },
+    {
+      "breed": "Sonata",
+      "description": "This egg glows with the light of the moon."
+    },
+    {
+      "breed": "Speckle-Throated",
+      "description": "This egg has a rough—yet shiny—shell."
+    },
+    {
+      "breed": "Spirit Ward",
+      "description": "This egg glows from within."
+    },
+    {
+      "breed": "Stellarum",
+      "description": "A red stone is embedded in this egg’s cold shell."
+    },
+    {
+      "breed": "Stone",
+      "description": "This egg is heavy and rough, as if it were made out of rock."
+    },
+    {
+      "breed": "Storm",
+      "description": "This egg is surrounded by fog."
+    },
+    {
+      "breed": "Stratos",
+      "description": "This egg is very large, but light for its size."
+    },
+    {
+      "breed": "Sunrise",
+      "description": "This egg is glowing as brightly as the sun."
+    },
+    {
+      "breed": "Thundersnow",
+      "description": "Cold lightning arcs out from this egg’s shell if you try to touch it."
+    },
+    {
+      "breed": "Tri-Horn Wyvern",
+      "description": "This brown egg is covered in intricate designs."
+    },
+    {
+      "breed": "Undine",
+      "description": "There is a thin layer of moisture coating this egg."
+    },
+    {
+      "breed": "Venturis",
+      "description": "An aura of serenity surrounds this iridescent egg."
+    },
+    {
+      "breed": "White",
+      "description": "This egg has a very clean look; it's completely devoid of dirt and scratches."
+    },
+    {
+      "breed": "Windrider Wyvern",
+      "description": "This egg seems lonely sitting by itself."
+    },
+    {
+      "breed": "Xenowyrm",
+      "description": "Mana courses throughout this glassy egg."
+    },
+    {
+      "breed": "Zyumorph",
+      "description": "This shiny egg seems to radiate power."
+    },
+    {
+      "breed": "Ciriax Lindwyrm",
+      "description": "This opalescent egg shimmers in the moonlight."
+    },
+    {
+      "breed": "Duotone",
+      "description": "This egg can’t seem to make up its mind what color it is."
+    },
+    {
+      "breed": "False-Headed Hydra",
+      "description": "This scaled egg is surrounded by the others."
+    },
+    {
+      "breed": "Nexus",
+      "description": "This dense, crystalline egg seems dangerously unstable."
+    },
+    {
+      "breed": "Pastel",
+      "description": "This egg was left in an ornate nest of fur and grass."
+    },
+    {
+      "breed": "Split",
+      "description": "This egg is split down the middle into two colors."
+    },
+    {
+      "breed": "Vilvoor",
+      "description": "It is difficult to discern this egg from its gloomy surroundings."
+    },
+    {
+      "breed": "Avea Pygmy",
+      "description": "This tiny egg is rather light."
+    },
+    {
+      "breed": "Avin Pygmy",
+      "description": "This tiny white egg shakes sometimes."
+    },
+    {
+      "breed": "Common Pygmy",
+      "description": "This egg is so tiny you almost didn't see it."
+    },
+    {
+      "breed": "Flare-Tail Pygmy",
+      "description": "Crystals are growing around the shell of this little egg."
+    },
+    {
+      "breed": "Lightning Pygmy",
+      "description": "This tiny blue egg gives you a slight shock when you touch it."
+    },
+    {
+      "breed": "Kyanite Pygmy",
+      "description": "This tiny cobalt egg has a crystalline sheen."
+    },
+    {
+      "breed": "Magelight Pygmy",
+      "description": "This small egg is engulfed in a cool, purple flame."
+    },
+    {
+      "breed": "Nilia Pygmy",
+      "description": "This tiny egg is heavier than you expected."
+    },
+    {
+      "breed": "Pargulus Pygmy",
+      "description": "This tiny egg resembles a seed."
+    },
+    {
+      "breed": "Pipio Pygmy",
+      "description": "This little egg is soft with a few feathers stuck to it."
+    },
+    {
+      "breed": "Scymrian Pygmy",
+      "description": "This tiny egg flashes in the sunlight."
+    },
+    {
+      "breed": "Berry Drake",
+      "description": "Two thin stripes crisscross the shell of this egg."
+    },
+    {
+      "breed": "Vespine Drake",
+      "description": "This smooth egg has dark markings."
+    }
+  ],
+  "coast": [
+    {
+      "breed": "Alcedine Wyvern",
+      "description": "The brilliant blue spots on this egg stand out."
+    },
+    {
+      "breed": "Aqualis",
+      "description": "This drab egg rests far from the water’s edge."
+    },
+    {
+      "breed": "Aranoa",
+      "description": "The vibrant scales on this egg glisten in the sunlight."
+    },
+    {
+      "breed": "Archelonian",
+      "description": "This beautifully patterned egg was buried close to shore."
+    },
+    {
+      "breed": "Balloon",
+      "description": "This light egg is floating in the air."
+    },
+    {
+      "breed": "Black",
+      "description": "This egg has a faint green glow around it."
+    },
+    {
+      "breed": "Black Capped Teimarr",
+      "description": "This egg has a black cap."
+    },
+    {
+      "breed": "Black Truffle",
+      "description": "This egg has a pleasant, musky smell."
+    },
+    {
+      "breed": "Blacktip",
+      "description": "This egg is off-white in color and smells a bit like salt."
+    },
+    {
+      "breed": "Blusang Lindwyrm",
+      "description": "This egg smells faintly like brine."
+    },
+    {
+      "breed": "Candelabra",
+      "description": "This mottled red egg almost glows from within."
+    },
+    {
+      "breed": "Cantormaris",
+      "description": "Something about this egg seems to lure you in."
+    },
+    {
+      "breed": "Cassare",
+      "description": "This egg makes you feel a bit uneasy."
+    },
+    {
+      "breed": "Celestial",
+      "description": "This translucent egg shines like starlight."
+    },
+    {
+      "breed": "Coastal Waverunner",
+      "description": "This egg reminds you of the sea."
+    },
+    {
+      "breed": "Dark Lumina",
+      "description": "This egg shines coldly in the moonlight."
+    },
+    {
+      "breed": "Daydream",
+      "description": "This egg is sitting on a cloud."
+    },
+    {
+      "breed": "Deep Sea",
+      "description": "This egg appears to be covered in scales."
+    },
+    {
+      "breed": "Fell",
+      "description": "This mottled egg looks positively ancient."
+    },
+    {
+      "breed": "Flamingo Wyvern",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Hooded Murkling",
+      "description": "This shady egg seems to be lurking just out of sight."
+    },
+    {
+      "breed": "Hydrophidius",
+      "description": "This striped egg is surprisingly heavy."
+    },
+    {
+      "breed": "Imperial Fleshcrowne",
+      "description": "This egg is hidden in the trees."
+    },
+    {
+      "breed": "Jaw Splitter Wyrm",
+      "description": "Something about this heavy egg unnerves you."
+    },
+    {
+      "breed": "Kaikos",
+      "description": "Three bold red stripes cut across this egg’s shell."
+    },
+    {
+      "breed": "Kingcrowne",
+      "description": "This shiny egg gives off an almost magical aura."
+    },
+    {
+      "breed": "Labradorite",
+      "description": "This shimmering egg was hidden far from the others."
+    },
+    {
+      "breed": "Lacula",
+      "description": "This green and silver egg lurks in the shadows, tempting you to steal it."
+    },
+    {
+      "breed": "Lotaan",
+      "description": "This scaly egg seems to disappear in the depths."
+    },
+    {
+      "breed": "Lumina",
+      "description": "This egg shines brightly in the sunlight."
+    },
+    {
+      "breed": "Magi",
+      "description": "This egg has an orange aura radiating from it."
+    },
+    {
+      "breed": "Marocephalic",
+      "description": "This egg has washed up on the beach."
+    },
+    {
+      "breed": "Mint",
+      "description": "This egg is hidden behind the others, as if it is shy."
+    },
+    {
+      "breed": "Mistra",
+      "description": "You hear a soft melody as you approach this egg."
+    },
+    {
+      "breed": "Oracle Wyrm",
+      "description": "It feels like this egg knew you were coming."
+    },
+    {
+      "breed": "Peach Pied",
+      "description": "This egg is well-camouflaged."
+    },
+    {
+      "breed": "Pink",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Purple",
+      "description": "Wow, purple isn't a color of egg you expected to see."
+    },
+    {
+      "breed": "Rift Wyrm",
+      "description": "This egg radiates an otherworldly chill."
+    },
+    {
+      "breed": "Sapphire",
+      "description": "This egg looks like a beautiful blue stone."
+    },
+    {
+      "breed": "Sinii Krai",
+      "description": "This striped egg has a warm glow."
+    },
+    {
+      "breed": "Siyat",
+      "description": "This egg seems to be glowing in spots."
+    },
+    {
+      "breed": "Skystrider",
+      "description": "This plain blue egg almost seems to float."
+    },
+    {
+      "breed": "Skywing",
+      "description": "This egg has strange markings on it."
+    },
+    {
+      "breed": "Sonata",
+      "description": "This egg glows with the light of the moon."
+    },
+    {
+      "breed": "Stellarum",
+      "description": "A red stone is embedded in this egg’s cold shell."
+    },
+    {
+      "breed": "Storm",
+      "description": "This egg is surrounded by fog."
+    },
+    {
+      "breed": "Tercorn",
+      "description": "Water glistens on this egg’s shimmering shell."
+    },
+    {
+      "breed": "Teris Wyvern",
+      "description": "This egg washed ashore."
+    },
+    {
+      "breed": "Tetra",
+      "description": "This egg has faint markings."
+    },
+    {
+      "breed": "Tideweaver",
+      "description": "This egg has vivid red stripes, reminiscent of waves and flames at once."
+    },
+    {
+      "breed": "Tsunami Wyvern",
+      "description": "This egg is rocking back and forth in a puddle, creating small waves."
+    },
+    {
+      "breed": "Water",
+      "description": "This egg is sitting in a shallow puddle."
+    },
+    {
+      "breed": "Water Walker",
+      "description": "This egg seems to be floating on a puddle."
+    },
+    {
+      "breed": "Waterhorse",
+      "description": "This egg is slimy and blue."
+    },
+    {
+      "breed": "White",
+      "description": "This egg has a very clean look; it's completely devoid of dirt and scratches."
+    },
+    {
+      "breed": "Windrider Wyvern",
+      "description": "This egg seems lonely sitting by itself."
+    },
+    {
+      "breed": "Xenowyrm",
+      "description": "Mana courses throughout this glassy egg."
+    },
+    {
+      "breed": "Baikala",
+      "description": "This heavy egg has a soft, yielding shell."
+    },
+    {
+      "breed": "Bauta",
+      "description": "This egg has raised golden ridges."
+    },
+    {
+      "breed": "Duotone",
+      "description": "This egg can’t seem to make up its mind what color it is."
+    },
+    {
+      "breed": "Quonebb",
+      "description": "A single blue spot marks this egg."
+    },
+    {
+      "breed": "Split",
+      "description": "This egg is split down the middle into two colors."
+    },
+    {
+      "breed": "Avea Pygmy",
+      "description": "This tiny egg is rather light."
+    },
+    {
+      "breed": "Avin Pygmy",
+      "description": "This tiny white egg shakes sometimes."
+    },
+    {
+      "breed": "Coral Pygmy Wyvern",
+      "description": "This tiny egg is striped and feels coarse."
+    },
+    {
+      "breed": "Lightning Pygmy",
+      "description": "This tiny blue egg gives you a slight shock when you touch it."
+    },
+    {
+      "breed": "Kovos Pygmy",
+      "description": "This tiny, dark egg fills you with existential dread."
+    },
+    {
+      "breed": "Kyanite Pygmy",
+      "description": "This tiny cobalt egg has a crystalline sheen."
+    },
+    {
+      "breed": "Mariner Pygmy",
+      "description": "This tiny egg smells like the sea."
+    },
+    {
+      "breed": "Painted Ray Pygmy",
+      "description": "This little egg blends into the sand."
+    },
+    {
+      "breed": "Pargulus Pygmy",
+      "description": "This tiny egg resembles a seed."
+    },
+    {
+      "breed": "Pipio Pygmy",
+      "description": "This little egg is soft with a few feathers stuck to it."
+    },
+    {
+      "breed": "Scymrian Pygmy",
+      "description": "This tiny egg flashes in the sunlight."
+    },
+    {
+      "breed": "Seawyrm Pygmy",
+      "description": "This tiny egg shines like a pearl."
+    },
+    {
+      "breed": "Berry Drake",
+      "description": "Two thin stripes crisscross the shell of this egg."
+    },
+    {
+      "breed": "Flint Drake",
+      "description": "This heavy egg has a distinct scorched smell."
+    },
+    {
+      "breed": "Glaucus Drake",
+      "description": "This striped egg feels moist."
+    },
+    {
+      "breed": "Honey Drake",
+      "description": "This egg is covered in tiny golden scales."
+    },
+    {
+      "breed": "Vespine Drake",
+      "description": "This smooth egg has dark markings."
+    }
+  ],
+  "desert": [
+    {
+      "breed": "Alcedine Wyvern",
+      "description": "The brilliant blue spots on this egg stand out."
+    },
+    {
+      "breed": "Anagallis",
+      "description": "This delicately patterned egg is sitting in the sunshine."
+    },
+    {
+      "breed": "Antarean",
+      "description": "This egg is surrounded by mysterious, reflective dust."
+    },
+    {
+      "breed": "Arrakyma",
+      "description": "A low hum emanates from this rough egg."
+    },
+    {
+      "breed": "Astrael",
+      "description": "Delicate petals envelop this egg."
+    },
+    {
+      "breed": "Black",
+      "description": "This egg has a faint green glow around it."
+    },
+    {
+      "breed": "Black Tea",
+      "description": "This egg has a faintly exotic scent."
+    },
+    {
+      "breed": "Black Truffle",
+      "description": "This egg has a pleasant, musky smell."
+    },
+    {
+      "breed": "Brimstone",
+      "description": "This egg smells rather rancid."
+    },
+    {
+      "breed": "Brumous",
+      "description": "This egg’s glittering shell sometimes gets lost in fog."
+    },
+    {
+      "breed": "Cassare",
+      "description": "This egg makes you feel a bit uneasy."
+    },
+    {
+      "breed": "Celestial",
+      "description": "This translucent egg shines like starlight."
+    },
+    {
+      "breed": "Copper",
+      "description": "This egg gleams with a reddish shine."
+    },
+    {
+      "breed": "Dark Lumina",
+      "description": "This egg shines coldly in the moonlight."
+    },
+    {
+      "breed": "Delta",
+      "description": "This speckled egg has deep blue spots."
+    },
+    {
+      "breed": "Fell",
+      "description": "This mottled egg looks positively ancient."
+    },
+    {
+      "breed": "Freckled",
+      "description": "This egg is yellow with orange speckling."
+    },
+    {
+      "breed": "Imperial Fleshcrowne",
+      "description": "This egg is hidden in the trees."
+    },
+    {
+      "breed": "Jaw Splitter Wyrm",
+      "description": "Something about this heavy egg unnerves you."
+    },
+    {
+      "breed": "Khusa",
+      "description": "This egg is smooth and shiny."
+    },
+    {
+      "breed": "Kingcrowne",
+      "description": "This shiny egg gives off an almost magical aura."
+    },
+    {
+      "breed": "Labradorite",
+      "description": "This shimmering egg was hidden far from the others."
+    },
+    {
+      "breed": "Lumina",
+      "description": "This egg shines brightly in the sunlight."
+    },
+    {
+      "breed": "Lunar Herald",
+      "description": "This metallic egg shows faint iridescence in moonlight."
+    },
+    {
+      "breed": "Magi",
+      "description": "This egg has an orange aura radiating from it."
+    },
+    {
+      "breed": "Monarch",
+      "description": "This egg is buried in leaf litter."
+    },
+    {
+      "breed": "Moonstone",
+      "description": "This egg resembles a glowing stone."
+    },
+    {
+      "breed": "Nebula",
+      "description": "This egg glows with a brilliant radiance."
+    },
+    {
+      "breed": "Peach Pied",
+      "description": "This egg is well-camouflaged."
+    },
+    {
+      "breed": "Pink",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Purple",
+      "description": "Wow, purple isn't a color of egg you expected to see."
+    },
+    {
+      "breed": "Red",
+      "description": "This egg is rather warm."
+    },
+    {
+      "breed": "Rift Wyrm",
+      "description": "This egg radiates an otherworldly chill."
+    },
+    {
+      "breed": "Sandwaste",
+      "description": "This egg was buried in a sand dune."
+    },
+    {
+      "breed": "Sapphire",
+      "description": "This egg looks like a beautiful blue stone."
+    },
+    {
+      "breed": "Scimitar-wing Wyvern",
+      "description": "This egg seems quite harmless."
+    },
+    {
+      "breed": "Shumoga",
+      "description": "This striped egg has a rough, ridged texture."
+    },
+    {
+      "breed": "Skysilk",
+      "description": "This light egg has very vibrant colors."
+    },
+    {
+      "breed": "Sonata",
+      "description": "This egg glows with the light of the moon."
+    },
+    {
+      "breed": "Spinel Wyvern",
+      "description": "This glassy egg has a single stripe on it."
+    },
+    {
+      "breed": "Spitfire",
+      "description": "This egg has brightly colored markings on it."
+    },
+    {
+      "breed": "Stellarum",
+      "description": "A red stone is embedded in this egg’s cold shell."
+    },
+    {
+      "breed": "Stone",
+      "description": "This egg is heavy and rough, as if it were made out of rock."
+    },
+    {
+      "breed": "Storm",
+      "description": "This egg is surrounded by fog."
+    },
+    {
+      "breed": "Stratos",
+      "description": "This egg is very large, but light for its size."
+    },
+    {
+      "breed": "Sunstone",
+      "description": "This egg resembles a glowing stone."
+    },
+    {
+      "breed": "Thunder",
+      "description": "Whenever you go near this egg your hair stands on end."
+    },
+    {
+      "breed": "Turpentine",
+      "description": "This egg smells strongly of turpentine."
+    },
+    {
+      "breed": "White",
+      "description": "This egg has a very clean look; it's completely devoid of dirt and scratches."
+    },
+    {
+      "breed": "Windrider Wyvern",
+      "description": "This egg seems lonely sitting by itself."
+    },
+    {
+      "breed": "Xenowyrm",
+      "description": "Mana courses throughout this glassy egg."
+    },
+    {
+      "breed": "Yellow-Crowned",
+      "description": "The air shimmers around this egg, as if from heat."
+    },
+    {
+      "breed": "Blancblack",
+      "description": "This egg is dark with light speckles...or maybe it’s light with dark speckles?"
+    },
+    {
+      "breed": "Duotone",
+      "description": "This egg can’t seem to make up its mind what color it is."
+    },
+    {
+      "breed": "Geminae",
+      "description": "This shiny egg gives you a headache when you get close."
+    },
+    {
+      "breed": "Hooktalon",
+      "description": "The surface of this egg is rough and sharp."
+    },
+    {
+      "breed": "Magnesium Amphiptere",
+      "description": "This shiny gray egg smells of burnt metal."
+    },
+    {
+      "breed": "Split",
+      "description": "This egg is split down the middle into two colors."
+    },
+    {
+      "breed": "Temple Wyrm",
+      "description": "This egg has a winding pattern on it."
+    },
+    {
+      "breed": "Avea Pygmy",
+      "description": "This tiny egg is rather light."
+    },
+    {
+      "breed": "Avin Pygmy",
+      "description": "This tiny white egg shakes sometimes."
+    },
+    {
+      "breed": "Furor Pygmy",
+      "description": "Grabbing this tiny egg makes you feel reckless."
+    },
+    {
+      "breed": "Lightning Pygmy",
+      "description": "This tiny blue egg gives you a slight shock when you touch it."
+    },
+    {
+      "breed": "Kyanite Pygmy",
+      "description": "This tiny cobalt egg has a crystalline sheen."
+    },
+    {
+      "breed": "Pargulus Pygmy",
+      "description": "This tiny egg resembles a seed."
+    },
+    {
+      "breed": "Pipio Pygmy",
+      "description": "This little egg is soft with a few feathers stuck to it."
+    },
+    {
+      "breed": "Red-Tailed Wyrm Pygmy",
+      "description": "This tiny egg has a bold red streak on it."
+    },
+    {
+      "breed": "Scymrian Pygmy",
+      "description": "This tiny egg flashes in the sunlight."
+    },
+    {
+      "breed": "Berry Drake",
+      "description": "Two thin stripes crisscross the shell of this egg."
+    },
+    {
+      "breed": "Pseudo-wyvern Drake",
+      "description": "It almost looks like there are claw marks on this egg."
+    },
+    {
+      "breed": "Tarantula Hawk Drake",
+      "description": "A delicate web-like pattern decorates this egg’s shell."
+    },
+    {
+      "breed": "Vespine Drake",
+      "description": "This smooth egg has dark markings."
+    }
+  ],
+  "forest": [
+    {
+      "breed": "Aeon Wyvern",
+      "description": "It’s almost like time is distorted around this egg."
+    },
+    {
+      "breed": "Albino",
+      "description": "You can see the baby dragon curled up inside this translucent egg."
+    },
+    {
+      "breed": "Alcedine Wyvern",
+      "description": "The brilliant blue spots on this egg stand out."
+    },
+    {
+      "breed": "Almerald",
+      "description": "This glossy green egg is rather warm."
+    },
+    {
+      "breed": "Anagallis",
+      "description": "This delicately patterned egg is sitting in the sunshine."
+    },
+    {
+      "breed": "Ash",
+      "description": "This ashen egg is smooth to the touch."
+    },
+    {
+      "breed": "Astralophyne",
+      "description": "This pleasant egg was placed in the path of a refreshing breeze."
+    },
+    {
+      "breed": "Azure Glacewing",
+      "description": "This large egg has a lustrous sheen and appears to be covered in scales."
+    },
+    {
+      "breed": "Balloon",
+      "description": "This light egg is floating in the air."
+    },
+    {
+      "breed": "Black",
+      "description": "This egg has a faint green glow around it."
+    },
+    {
+      "breed": "Black Truffle",
+      "description": "This egg has a pleasant, musky smell."
+    },
+    {
+      "breed": "Bolt",
+      "description": "This egg has a striking pattern."
+    },
+    {
+      "breed": "Brumous",
+      "description": "This egg’s glittering shell sometimes gets lost in fog."
+    },
+    {
+      "breed": "Cassare",
+      "description": "This egg makes you feel a bit uneasy."
+    },
+    {
+      "breed": "Celestial",
+      "description": "This translucent egg shines like starlight."
+    },
+    {
+      "breed": "Dark Green",
+      "description": "This egg is sitting in a patch of grass and small flowers even though there's no sun in the cave."
+    },
+    {
+      "breed": "Dark Lumina",
+      "description": "This egg shines coldly in the moonlight."
+    },
+    {
+      "breed": "Daydream",
+      "description": "This egg is sitting on a cloud."
+    },
+    {
+      "breed": "Equinox",
+      "description": "This egg shakes slightly when taken out of the light."
+    },
+    {
+      "breed": "Fell",
+      "description": "This mottled egg looks positively ancient."
+    },
+    {
+      "breed": "Green",
+      "description": "This egg is sitting in a pile of small pebbles."
+    },
+    {
+      "breed": "Harvest",
+      "description": "This heavy egg feels slightly warm."
+    },
+    {
+      "breed": "Hunter",
+      "description": "This smooth egg has a bright blue stripe on it."
+    },
+    {
+      "breed": "Imperial Fleshcrowne",
+      "description": "This egg is hidden in the trees."
+    },
+    {
+      "breed": "Jaw Splitter Wyrm",
+      "description": "Something about this heavy egg unnerves you."
+    },
+    {
+      "breed": "Kaikos",
+      "description": "Three bold red stripes cut across this egg’s shell."
+    },
+    {
+      "breed": "Kingcrowne",
+      "description": "This shiny egg gives off an almost magical aura."
+    },
+    {
+      "breed": "Labradorite",
+      "description": "This shimmering egg was hidden far from the others."
+    },
+    {
+      "breed": "Lumina",
+      "description": "This egg shines brightly in the sunlight."
+    },
+    {
+      "breed": "Luminox",
+      "description": "The markings on this egg glow brightly in the shadows."
+    },
+    {
+      "breed": "Magi",
+      "description": "This egg has an orange aura radiating from it."
+    },
+    {
+      "breed": "Melismor",
+      "description": "This heavy egg has an earthy scent, like freshly-tilled soil."
+    },
+    {
+      "breed": "Mint",
+      "description": "This egg is hidden behind the others, as if it is shy."
+    },
+    {
+      "breed": "Mirisia Amphiptere",
+      "description": "This egg emanates a peculiar smell."
+    },
+    {
+      "breed": "Monarch",
+      "description": "This egg is buried in leaf litter."
+    },
+    {
+      "breed": "Nocturne",
+      "description": "This egg appears to be made of limestone."
+    },
+    {
+      "breed": "Olive",
+      "description": "This egg smells musty, like rotting leaves."
+    },
+    {
+      "breed": "Oracle Wyrm",
+      "description": "It feels like this egg knew you were coming."
+    },
+    {
+      "breed": "Peach Pied",
+      "description": "This egg is well-camouflaged."
+    },
+    {
+      "breed": "Pink",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Plated Colossus",
+      "description": "This massive egg is covered with thick plates."
+    },
+    {
+      "breed": "Purple",
+      "description": "Wow, purple isn't a color of egg you expected to see."
+    },
+    {
+      "breed": "Rift Wyrm",
+      "description": "This egg radiates an otherworldly chill."
+    },
+    {
+      "breed": "Sapo",
+      "description": "This egg’s shell is slippery and clean."
+    },
+    {
+      "breed": "Sapphire",
+      "description": "This egg looks like a beautiful blue stone."
+    },
+    {
+      "breed": "Seasonal (Autumn)",
+      "description": "The markings on this egg match the weather outside."
+    },
+    {
+      "breed": "Seasonal (Spring)",
+      "description": "The markings on this egg match the weather outside."
+    },
+    {
+      "breed": "Seasonal (Summer)",
+      "description": "The markings on this egg match the weather outside."
+    },
+    {
+      "breed": "Seraph",
+      "description": "This egg is covered in soft, downy feathers."
+    },
+    {
+      "breed": "Siorghlas Wyvern",
+      "description": "This dark egg has a delicate shell that smells faintly of pine."
+    },
+    {
+      "breed": "Siyat",
+      "description": "This egg seems to be glowing in spots."
+    },
+    {
+      "breed": "Skystrider",
+      "description": "This plain blue egg almost seems to float."
+    },
+    {
+      "breed": "Sonata",
+      "description": "This egg glows with the light of the moon."
+    },
+    {
+      "breed": "Spirit Ward",
+      "description": "This egg glows from within."
+    },
+    {
+      "breed": "Spotted Greenwing",
+      "description": "This egg is covered in bright spots."
+    },
+    {
+      "breed": "Stellarum",
+      "description": "A red stone is embedded in this egg’s cold shell."
+    },
+    {
+      "breed": "Storm",
+      "description": "This egg is surrounded by fog."
+    },
+    {
+      "breed": "Striped",
+      "description": "This egg has brightly colored markings on it."
+    },
+    {
+      "breed": "Striped River",
+      "description": "A small puddle of condensation has collected under this egg."
+    },
+    {
+      "breed": "Swallowtail",
+      "description": "This egg has a very thin shell."
+    },
+    {
+      "breed": "Terrae",
+      "description": "This egg is a lush green hue."
+    },
+    {
+      "breed": "Thousand Wish",
+      "description": "A serene calm washes over you as you approach this navy egg."
+    },
+    {
+      "breed": "Undine",
+      "description": "There is a thin layer of moisture coating this egg."
+    },
+    {
+      "breed": "Water Walker",
+      "description": "This egg seems to be floating on a puddle."
+    },
+    {
+      "breed": "Whiptail",
+      "description": "This egg shakes from time to time, as if it is eager to hatch."
+    },
+    {
+      "breed": "White",
+      "description": "This egg has a very clean look; it's completely devoid of dirt and scratches."
+    },
+    {
+      "breed": "Windrider Wyvern",
+      "description": "This egg seems lonely sitting by itself."
+    },
+    {
+      "breed": "Wisteria",
+      "description": "This egg is surrounded by beautiful flowers."
+    },
+    {
+      "breed": "Xenowyrm",
+      "description": "Mana courses throughout this glassy egg."
+    },
+    {
+      "breed": "Blancblack",
+      "description": "This egg is dark with light speckles...or maybe it’s light with dark speckles?"
+    },
+    {
+      "breed": "Duotone",
+      "description": "This egg can’t seem to make up its mind what color it is."
+    },
+    {
+      "breed": "Ghanser",
+      "description": "This egg has spots that glow brightly when touched."
+    },
+    {
+      "breed": "Quonebb",
+      "description": "A single blue spot marks this egg."
+    },
+    {
+      "breed": "Split",
+      "description": "This egg is split down the middle into two colors."
+    },
+    {
+      "breed": "Tangledrakin",
+      "description": "The light swirls on this egg stand out against the dark underbrush."
+    },
+    {
+      "breed": "Avea Pygmy",
+      "description": "This tiny egg is rather light."
+    },
+    {
+      "breed": "Avin Pygmy",
+      "description": "This tiny white egg shakes sometimes."
+    },
+    {
+      "breed": "Common Pygmy",
+      "description": "This egg is so tiny you almost didn't see it."
+    },
+    {
+      "breed": "Glowback Pygmy",
+      "description": "This tiny egg gives off a colorful glow."
+    },
+    {
+      "breed": "Lightning Pygmy",
+      "description": "This tiny blue egg gives you a slight shock when you touch it."
+    },
+    {
+      "breed": "Kyanite Pygmy",
+      "description": "This tiny cobalt egg has a crystalline sheen."
+    },
+    {
+      "breed": "Mimic Pygmy",
+      "description": "This tiny glowing egg tempts you to follow its light."
+    },
+    {
+      "breed": "Mistlet Pygmy",
+      "description": "This tiny egg is mysterious and dark."
+    },
+    {
+      "breed": "Pargulus Pygmy",
+      "description": "This tiny egg resembles a seed."
+    },
+    {
+      "breed": "Pipio Pygmy",
+      "description": "This little egg is soft with a few feathers stuck to it."
+    },
+    {
+      "breed": "Red-Tailed Wyrm Pygmy",
+      "description": "This tiny egg has a bold red streak on it."
+    },
+    {
+      "breed": "Scymrian Pygmy",
+      "description": "This tiny egg flashes in the sunlight."
+    },
+    {
+      "breed": "Berry Drake",
+      "description": "Two thin stripes crisscross the shell of this egg."
+    },
+    {
+      "breed": "Greater Spotted Drake",
+      "description": "This egg is speckled with rosette-like markings."
+    },
+    {
+      "breed": "Honey Drake",
+      "description": "This egg is covered in tiny golden scales."
+    },
+    {
+      "breed": "Moonglow Drake",
+      "description": "This egg displays the colors of both dawn and dusk."
+    },
+    {
+      "breed": "Ochredrake",
+      "description": "This egg has strange markings on it."
+    },
+    {
+      "breed": "Sunbeam Drake",
+      "description": "This egg displays the colors of both dawn and dusk."
+    },
+    {
+      "breed": "Tatterdrake",
+      "description": "This egg has a rough shell."
+    },
+    {
+      "breed": "Vespine Drake",
+      "description": "This smooth egg has dark markings."
+    },
+    {
+      "breed": "Vremya Drake",
+      "description": "This smooth green egg looks vaguely familiar."
+    }
+  ],
+  "jungle": [
+    {
+      "breed": "Alcedine Wyvern",
+      "description": "The brilliant blue spots on this egg stand out."
+    },
+    {
+      "breed": "Algarre",
+      "description": "This dull mottled egg blends into the surrounding algae."
+    },
+    {
+      "breed": "Anagallis",
+      "description": "This delicately patterned egg is sitting in the sunshine."
+    },
+    {
+      "breed": "Aranoa",
+      "description": "The vibrant scales on this egg glisten in the sunlight."
+    },
+    {
+      "breed": "Aria",
+      "description": "This bright egg has a warm shell."
+    },
+    {
+      "breed": "Balloon",
+      "description": "This light egg is floating in the air."
+    },
+    {
+      "breed": "Black",
+      "description": "This egg has a faint green glow around it."
+    },
+    {
+      "breed": "Black Truffle",
+      "description": "This egg has a pleasant, musky smell."
+    },
+    {
+      "breed": "Bright-Breasted Wyvern",
+      "description": "This egg is covered in speckles."
+    },
+    {
+      "breed": "Candelabra",
+      "description": "This mottled red egg almost glows from within."
+    },
+    {
+      "breed": "Canopy",
+      "description": "This egg is hidden by some leaves."
+    },
+    {
+      "breed": "Cantormaris",
+      "description": "Something about this egg seems to lure you in."
+    },
+    {
+      "breed": "Carmine Wyvern",
+      "description": "This pink and red egg wobbles occasionally."
+    },
+    {
+      "breed": "Cassare",
+      "description": "This egg makes you feel a bit uneasy."
+    },
+    {
+      "breed": "Celestial",
+      "description": "This translucent egg shines like starlight."
+    },
+    {
+      "breed": "Dark Green",
+      "description": "This egg is sitting in a patch of grass and small flowers even though there's no sun in the cave."
+    },
+    {
+      "breed": "Dark Lumina",
+      "description": "This egg shines coldly in the moonlight."
+    },
+    {
+      "breed": "Daydream",
+      "description": "This egg is sitting on a cloud."
+    },
+    {
+      "breed": "Dorsal",
+      "description": "This egg has multiple bands of color on it."
+    },
+    {
+      "breed": "Equinox",
+      "description": "This egg shakes slightly when taken out of the light."
+    },
+    {
+      "breed": "Fanalea",
+      "description": "This egg has delicate markings that curl around its shell."
+    },
+    {
+      "breed": "Fell",
+      "description": "This mottled egg looks positively ancient."
+    },
+    {
+      "breed": "Fever Wyvern",
+      "description": "This egg is patterned with an orange flare."
+    },
+    {
+      "breed": "Flamingo Wyvern",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Freckled",
+      "description": "This egg is yellow with orange speckling."
+    },
+    {
+      "breed": "Frilled",
+      "description": "This egg has strange markings on it."
+    },
+    {
+      "breed": "Gemshard",
+      "description": "This egg is encrusted with colorful gemstones."
+    },
+    {
+      "breed": "Gold-Horned Tangar",
+      "description": "This egg has bright orange and green markings."
+    },
+    {
+      "breed": "Horse",
+      "description": "This egg has strange markings on it."
+    },
+    {
+      "breed": "Imperial Fleshcrowne",
+      "description": "This egg is hidden in the trees."
+    },
+    {
+      "breed": "Jaw Splitter Wyrm",
+      "description": "Something about this heavy egg unnerves you."
+    },
+    {
+      "breed": "Kingcrowne",
+      "description": "This shiny egg gives off an almost magical aura."
+    },
+    {
+      "breed": "Labradorite",
+      "description": "This shimmering egg was hidden far from the others."
+    },
+    {
+      "breed": "Lihnseyre",
+      "description": "This glowing egg seems to tug at your very core."
+    },
+    {
+      "breed": "Lumina",
+      "description": "This egg shines brightly in the sunlight."
+    },
+    {
+      "breed": "Magi",
+      "description": "This egg has an orange aura radiating from it."
+    },
+    {
+      "breed": "Mint",
+      "description": "This egg is hidden behind the others, as if it is shy."
+    },
+    {
+      "breed": "Mirisia Amphiptere",
+      "description": "This egg emanates a peculiar smell."
+    },
+    {
+      "breed": "Mistra",
+      "description": "You hear a soft melody as you approach this egg."
+    },
+    {
+      "breed": "Monarch",
+      "description": "This egg is buried in leaf litter."
+    },
+    {
+      "breed": "Neotropical",
+      "description": "This egg has strange yellow stripes."
+    },
+    {
+      "breed": "Oracle Wyrm",
+      "description": "It feels like this egg knew you were coming."
+    },
+    {
+      "breed": "Pink",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Plated Colossus",
+      "description": "This massive egg is covered with thick plates."
+    },
+    {
+      "breed": "Purple",
+      "description": "Wow, purple isn't a color of egg you expected to see."
+    },
+    {
+      "breed": "Rift Wyrm",
+      "description": "This egg radiates an otherworldly chill."
+    },
+    {
+      "breed": "Sapo",
+      "description": "This egg’s shell is slippery and clean."
+    },
+    {
+      "breed": "Sapphire",
+      "description": "This egg looks like a beautiful blue stone."
+    },
+    {
+      "breed": "Sawtooth",
+      "description": "Soft chirping sounds are coming from inside the egg."
+    },
+    {
+      "breed": "Skysilk",
+      "description": "This light egg has very vibrant colors."
+    },
+    {
+      "breed": "Sonata",
+      "description": "This egg glows with the light of the moon."
+    },
+    {
+      "breed": "Stellarum",
+      "description": "A red stone is embedded in this egg’s cold shell."
+    },
+    {
+      "breed": "Storm",
+      "description": "This egg is surrounded by fog."
+    },
+    {
+      "breed": "Stratos",
+      "description": "This egg is very large, but light for its size."
+    },
+    {
+      "breed": "Striped",
+      "description": "This egg has brightly colored markings on it."
+    },
+    {
+      "breed": "Sunsong Amphiptere",
+      "description": "This egg changes colors in the sunlight."
+    },
+    {
+      "breed": "Tetra",
+      "description": "This egg has faint markings."
+    },
+    {
+      "breed": "Water Walker",
+      "description": "This egg seems to be floating on a puddle."
+    },
+    {
+      "breed": "White",
+      "description": "This egg has a very clean look; it's completely devoid of dirt and scratches."
+    },
+    {
+      "breed": "Windrider Wyvern",
+      "description": "This egg seems lonely sitting by itself."
+    },
+    {
+      "breed": "Xenowyrm",
+      "description": "Mana courses throughout this glassy egg."
+    },
+    {
+      "breed": "Zarafauri",
+      "description": "This partially scaled egg looks like it was placed with great care."
+    },
+    {
+      "breed": "Duotone",
+      "description": "This egg can’t seem to make up its mind what color it is."
+    },
+    {
+      "breed": "Ghanser",
+      "description": "This egg has spots that glow brightly when touched."
+    },
+    {
+      "breed": "Quonebb",
+      "description": "A single blue spot marks this egg."
+    },
+    {
+      "breed": "Split",
+      "description": "This egg is split down the middle into two colors."
+    },
+    {
+      "breed": "Tangledrakin",
+      "description": "The light swirls on this egg stand out against the dark underbrush."
+    },
+    {
+      "breed": "Temple Wyrm",
+      "description": "This egg has a winding pattern on it."
+    },
+    {
+      "breed": "Avea Pygmy",
+      "description": "This tiny egg is rather light."
+    },
+    {
+      "breed": "Avin Pygmy",
+      "description": "This tiny white egg shakes sometimes."
+    },
+    {
+      "breed": "Common Pygmy",
+      "description": "This egg is so tiny you almost didn't see it."
+    },
+    {
+      "breed": "Glowback Pygmy",
+      "description": "This tiny egg gives off a colorful glow."
+    },
+    {
+      "breed": "Lightning Pygmy",
+      "description": "This tiny blue egg gives you a slight shock when you touch it."
+    },
+    {
+      "breed": "Kyanite Pygmy",
+      "description": "This tiny cobalt egg has a crystalline sheen."
+    },
+    {
+      "breed": "Mimic Pygmy",
+      "description": "This tiny glowing egg tempts you to follow its light."
+    },
+    {
+      "breed": "Misfit Pygmy",
+      "description": "This tiny egg has crazy swirls on it."
+    },
+    {
+      "breed": "Mistlet Pygmy",
+      "description": "This tiny egg is mysterious and dark."
+    },
+    {
+      "breed": "Occulri Pygmy",
+      "description": "Shadows flicker wildly around this diminutive egg."
+    },
+    {
+      "breed": "Pargulus Pygmy",
+      "description": "This tiny egg resembles a seed."
+    },
+    {
+      "breed": "Pipio Pygmy",
+      "description": "This little egg is soft with a few feathers stuck to it."
+    },
+    {
+      "breed": "Red-Tailed Wyrm Pygmy",
+      "description": "This tiny egg has a bold red streak on it."
+    },
+    {
+      "breed": "Scymrian Pygmy",
+      "description": "This tiny egg flashes in the sunlight."
+    },
+    {
+      "breed": "Berry Drake",
+      "description": "Two thin stripes crisscross the shell of this egg."
+    },
+    {
+      "breed": "Honey Drake",
+      "description": "This egg is covered in tiny golden scales."
+    },
+    {
+      "breed": "Howler Drake",
+      "description": "You hear strange noises coming from inside this egg."
+    },
+    {
+      "breed": "Morphodrake",
+      "description": "A few bright markings decorate this egg’s shell."
+    },
+    {
+      "breed": "Tatterdrake",
+      "description": "This egg has a rough shell."
+    },
+    {
+      "breed": "Vespine Drake",
+      "description": "This smooth egg has dark markings."
+    }
+  ],
+  "volcano": [
+    {
+      "breed": "Alcedine Wyvern",
+      "description": "The brilliant blue spots on this egg stand out."
+    },
+    {
+      "breed": "Ash",
+      "description": "This ashen egg is smooth to the touch."
+    },
+    {
+      "breed": "Astrael",
+      "description": "Delicate petals envelop this egg."
+    },
+    {
+      "breed": "Black",
+      "description": "This egg has a faint green glow around it."
+    },
+    {
+      "breed": "Black Truffle",
+      "description": "This egg has a pleasant, musky smell."
+    },
+    {
+      "breed": "Blazeback",
+      "description": "This egg has a dull metallic luster and is hot to the touch."
+    },
+    {
+      "breed": "Brimstone",
+      "description": "This egg smells rather rancid."
+    },
+    {
+      "breed": "Caihong",
+      "description": "This iridescent egg radiates the warmth of the sun."
+    },
+    {
+      "breed": "Cantormaris",
+      "description": "Something about this egg seems to lure you in."
+    },
+    {
+      "breed": "Cassare",
+      "description": "This egg makes you feel a bit uneasy."
+    },
+    {
+      "breed": "Celestial",
+      "description": "This translucent egg shines like starlight."
+    },
+    {
+      "breed": "Copper",
+      "description": "This egg gleams with a reddish shine."
+    },
+    {
+      "breed": "Dark Lumina",
+      "description": "This egg shines coldly in the moonlight."
+    },
+    {
+      "breed": "Diamondwing",
+      "description": "This egg shines like a diamond."
+    },
+    {
+      "breed": "Ember",
+      "description": "This egg is really hot."
+    },
+    {
+      "breed": "Equinox",
+      "description": "This egg shakes slightly when taken out of the light."
+    },
+    {
+      "breed": "Falconiform Wyvern",
+      "description": "Cold flames dance across the surface of this egg."
+    },
+    {
+      "breed": "Fell",
+      "description": "This mottled egg looks positively ancient."
+    },
+    {
+      "breed": "Fire Gem",
+      "description": "This rough egg has shimmering veins of crystal running across its surface."
+    },
+    {
+      "breed": "Galvanic Wyvern",
+      "description": "Powerful energy emanates from this egg."
+    },
+    {
+      "breed": "Green",
+      "description": "This egg is sitting in a pile of small pebbles."
+    },
+    {
+      "breed": "Guardian",
+      "description": "This egg is sitting in front of the others."
+    },
+    {
+      "breed": "Hellfire Wyvern",
+      "description": "This egg radiates the heat of a fell flame."
+    },
+    {
+      "breed": "Imperial Fleshcrowne",
+      "description": "This egg is hidden in the trees."
+    },
+    {
+      "breed": "Jaw Splitter Wyrm",
+      "description": "Something about this heavy egg unnerves you."
+    },
+    {
+      "breed": "Kingcrowne",
+      "description": "This shiny egg gives off an almost magical aura."
+    },
+    {
+      "breed": "Labradorite",
+      "description": "This shimmering egg was hidden far from the others."
+    },
+    {
+      "breed": "Lalopias Leviathan",
+      "description": "This egg looks like cooled lava."
+    },
+    {
+      "breed": "Leodon",
+      "description": "This red and gold egg sits before the others, almost daring you to grab it."
+    },
+    {
+      "breed": "Lumina",
+      "description": "This egg shines brightly in the sunlight."
+    },
+    {
+      "breed": "Lunar Herald",
+      "description": "This metallic egg shows faint iridescence in moonlight."
+    },
+    {
+      "breed": "Magi",
+      "description": "This egg has an orange aura radiating from it."
+    },
+    {
+      "breed": "Magma",
+      "description": "This egg is almost too hot to touch."
+    },
+    {
+      "breed": "Mint",
+      "description": "This egg is hidden behind the others, as if it is shy."
+    },
+    {
+      "breed": "Pink",
+      "description": "It's bright. And pink."
+    },
+    {
+      "breed": "Purple",
+      "description": "Wow, purple isn't a color of egg you expected to see."
+    },
+    {
+      "breed": "Pyropellis Wyvern",
+      "description": "Tough ridges line the surface of this rough, mottled egg."
+    },
+    {
+      "breed": "Pyrovar",
+      "description": "This glassy egg is too hot to hold with your bare hands."
+    },
+    {
+      "breed": "Pyrrhichios",
+      "description": "When you tap on this shell, the hatchling inside taps back."
+    },
+    {
+      "breed": "Red",
+      "description": "This egg is rather warm."
+    },
+    {
+      "breed": "Rift Wyrm",
+      "description": "This egg radiates an otherworldly chill."
+    },
+    {
+      "breed": "Royal Crimson",
+      "description": "This large egg is a dark crimson color."
+    },
+    {
+      "breed": "Sapphire",
+      "description": "This egg looks like a beautiful blue stone."
+    },
+    {
+      "breed": "Scimitar-wing Wyvern",
+      "description": "This egg seems quite harmless."
+    },
+    {
+      "breed": "Script",
+      "description": "This egg is covered in mysterious patterns."
+    },
+    {
+      "breed": "Serrati Wyvern",
+      "description": "This egg has striations marking its rough shell."
+    },
+    {
+      "breed": "Silvershade",
+      "description": "This dark egg has bright flecks that almost seem to move as they catch the light."
+    },
+    {
+      "breed": "Sonata",
+      "description": "This egg glows with the light of the moon."
+    },
+    {
+      "breed": "Spinel Wyvern",
+      "description": "This glassy egg has a single stripe on it."
+    },
+    {
+      "breed": "Stellarum",
+      "description": "A red stone is embedded in this egg’s cold shell."
+    },
+    {
+      "breed": "Stone",
+      "description": "This egg is heavy and rough, as if it were made out of rock."
+    },
+    {
+      "breed": "Storm",
+      "description": "This egg is surrounded by fog."
+    },
+    {
+      "breed": "White",
+      "description": "This egg has a very clean look; it's completely devoid of dirt and scratches."
+    },
+    {
+      "breed": "Windrider Wyvern",
+      "description": "This egg seems lonely sitting by itself."
+    },
+    {
+      "breed": "Xenowyrm",
+      "description": "Mana courses throughout this glassy egg."
+    },
+    {
+      "breed": "Xol",
+      "description": "This dull egg feels cozily warm."
+    },
+    {
+      "breed": "Blancblack",
+      "description": "This egg is dark with light speckles...or maybe it’s light with dark speckles?"
+    },
+    {
+      "breed": "Duotone",
+      "description": "This egg can’t seem to make up its mind what color it is."
+    },
+    {
+      "breed": "Gilded Bloodscale",
+      "description": "This egg glitters oddly in the light."
+    },
+    {
+      "breed": "Magnesium Amphiptere",
+      "description": "This shiny gray egg smells of burnt metal."
+    },
+    {
+      "breed": "Nexus",
+      "description": "This dense, crystalline egg seems dangerously unstable."
+    },
+    {
+      "breed": "Split",
+      "description": "This egg is split down the middle into two colors."
+    },
+    {
+      "breed": "Vilvoor",
+      "description": "It is difficult to discern this egg from its gloomy surroundings."
+    },
+    {
+      "breed": "Avea Pygmy",
+      "description": "This tiny egg is rather light."
+    },
+    {
+      "breed": "Avin Pygmy",
+      "description": "This tiny white egg shakes sometimes."
+    },
+    {
+      "breed": "Crimson Flare Pygmy",
+      "description": "This egg is tiny and brightly colored."
+    },
+    {
+      "breed": "Lightning Pygmy",
+      "description": "This tiny blue egg gives you a slight shock when you touch it."
+    },
+    {
+      "breed": "Kyanite Pygmy",
+      "description": "This tiny cobalt egg has a crystalline sheen."
+    },
+    {
+      "breed": "Pargulus Pygmy",
+      "description": "This tiny egg resembles a seed."
+    },
+    {
+      "breed": "Pipio Pygmy",
+      "description": "This little egg is soft with a few feathers stuck to it."
+    },
+    {
+      "breed": "Scymrian Pygmy",
+      "description": "This tiny egg flashes in the sunlight."
+    },
+    {
+      "breed": "Berry Drake",
+      "description": "Two thin stripes crisscross the shell of this egg."
+    },
+    {
+      "breed": "Sabertooth Bull Drake",
+      "description": "This striped egg is surprisingly heavy."
+    },
+    {
+      "breed": "Vespine Drake",
+      "description": "This smooth egg has dark markings."
+    }
+  ]
+}
