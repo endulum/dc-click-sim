@@ -8,7 +8,7 @@ type Theme = 'default' | 'portal' | 'sixties';
 
 export function App() {
   const [theme, setTheme] = useState<Theme>('default');
-  const { rounds, addRound } = useSimulatorHistory();
+  const { rounds, addRound, wipeRounds } = useSimulatorHistory();
 
   return (
     <>
@@ -52,7 +52,7 @@ export function App() {
 
       <Simulator theme={theme} addRound={addRound} />
 
-      {rounds.length > 0 && <History rounds={rounds} />}
+      <History rounds={rounds} wipeRounds={wipeRounds} />
     </>
   );
 }
