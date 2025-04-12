@@ -1,4 +1,4 @@
-import { useRef, useState, type MouseEvent } from 'react';
+import { useRef, useState } from 'react';
 
 import { Egg, type Biome } from '../types';
 import { generateBiomeEggs } from '../eggUtils';
@@ -35,8 +35,9 @@ export function useSimulator() {
   };
 
   const handleClick = (e: MouseEvent) => {
-    console.log(e);
-    // todo: click handler to count misclicks other than wrong egg catches
+    if (stats.current) {
+      if (!(e.target as Element).closest('a')) stats.current.misclicks++;
+    }
   };
 
   function startGame() {

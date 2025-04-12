@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 import MysteryEgg from '../assets/egg.gif';
 
@@ -6,8 +6,17 @@ import { type Biome } from '../types';
 import { useSimulator } from './useSimulator';
 
 export function Simulator({ theme }: { theme: string }) {
-  const { biome, eggs, stats, handleBiomeChange, handleEggCatch, startGame } =
-    useSimulator();
+  const simulatorRef = useRef<HTMLDivElement>(null);
+
+  const {
+    biome,
+    eggs,
+    stats,
+    handleBiomeChange,
+    handleClick,
+    handleEggCatch,
+    startGame,
+  } = useSimulator();
 
   const handleRefresh = (e: KeyboardEvent) => {
     if (e.code === 'Space') {
@@ -18,13 +27,17 @@ export function Simulator({ theme }: { theme: string }) {
 
   useEffect(() => {
     document.addEventListener('keypress', handleRefresh);
+    if (simulatorRef.current)
+      simulatorRef.current.addEventListener('click', handleClick);
     return () => {
       document.removeEventListener('keypress', handleRefresh);
+      if (simulatorRef.current)
+        simulatorRef.current.removeEventListener('click', handleClick);
     };
   }, []);
 
   return (
-    <div className={`simulator ${theme}`}>
+    <div className={`simulator ${theme}`} ref={simulatorRef}>
       {/* biome header */}
       <div>
         <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
