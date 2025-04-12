@@ -109,7 +109,6 @@ export function Simulator({ theme }: { theme: string }) {
 
       {/* game status message */}
       <div className="simulator-status">
-        {/* if no game... */}
         {stats.current ? (
           <p>
             Find the <b>{stats.current.rareEgg.breed}</b> egg!
