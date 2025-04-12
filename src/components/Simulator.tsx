@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import MysteryEgg from '../assets/egg.gif';
 
 import { type Biome } from '../types';
-import { useSimulator } from './useSimulator';
+import { useSimulatorRound } from './useSimulatorRound';
 
 export function Simulator({ theme }: { theme: string }) {
   const simulatorRef = useRef<HTMLDivElement>(null);
@@ -11,17 +11,17 @@ export function Simulator({ theme }: { theme: string }) {
   const {
     biome,
     eggs,
-    stats,
+    roundStats,
     handleBiomeChange,
     handleClick,
     handleEggCatch,
     startGame,
-  } = useSimulator();
+  } = useSimulatorRound((stats) => console.log(stats));
 
   const handleRefresh = (e: KeyboardEvent) => {
     if (e.code === 'Space') {
       e.preventDefault();
-      if (!stats.current) startGame();
+      if (!roundStats.current) startGame();
     }
   };
 
@@ -109,9 +109,9 @@ export function Simulator({ theme }: { theme: string }) {
 
       {/* game status message */}
       <div className="simulator-status">
-        {stats.current ? (
+        {roundStats.current ? (
           <p>
-            Find the <b>{stats.current.rareEgg.breed}</b> egg!
+            Find the <b>{roundStats.current.rareEgg.breed}</b> egg!
           </p>
         ) : (
           <p>
