@@ -52,7 +52,7 @@ export function App() {
 
       <Simulator theme={theme} addRound={addRound} />
 
-      <History rounds={rounds} />
+      {rounds.length > 0 && <History rounds={rounds} />}
     </>
   );
 }

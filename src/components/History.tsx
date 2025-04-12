@@ -28,9 +28,9 @@ export function History({ rounds }: { rounds: EndRoundStats[] }) {
                 <tr key={round.start}>
                   <td>{index + 1}</td>
                   <td>{round.rareEgg.breed}</td>
-                  <td>{msToSecs(round.time)}</td>
+                  <td>≈{msToSecs(round.time)}</td>
                   <td>{round.visits}</td>
-                  <td>{msToSecs(round.time / (round.visits + 1))}</td>
+                  <td>≈{msToSecs(round.time / (round.visits + 1))}</td>
                   <td>{round.skips}</td>
                   <td>{round.misclicks}</td>
                 </tr>
