@@ -2,10 +2,16 @@ import { useEffect, useRef } from 'react';
 
 import MysteryEgg from '../assets/egg.gif';
 
-import { type Biome } from '../types';
+import { type EndRoundStats, type Biome } from '../types';
 import { useSimulatorRound } from './useSimulatorRound';
 
-export function Simulator({ theme }: { theme: string }) {
+export function Simulator({
+  theme,
+  addRound,
+}: {
+  theme: string;
+  addRound: (round: EndRoundStats) => void;
+}) {
   const simulatorRef = useRef<HTMLDivElement>(null);
 
   const {
@@ -16,7 +22,7 @@ export function Simulator({ theme }: { theme: string }) {
     handleClick,
     handleEggCatch,
     startGame,
-  } = useSimulatorRound((stats) => console.log(stats));
+  } = useSimulatorRound((stats) => addRound(stats));
 
   const handleRefresh = (e: KeyboardEvent) => {
     if (e.code === 'Space') {

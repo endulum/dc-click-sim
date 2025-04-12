@@ -205,3 +205,34 @@ p a {
   align-items: center;
   justify-content: space-between;
 }
+
+.history .table {
+  display: block;
+  overflow-y: auto;
+  max-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.history table {
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  max-height: 100px;
+
+  thead {
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #18181b;
+    td {
+      border-bottom: 1px solid #d4d4d8;
+    }
+  }
+
+  tbody {
+    tr:first-of-type {
+      font-weight: bold;
+    }
+  }
+}

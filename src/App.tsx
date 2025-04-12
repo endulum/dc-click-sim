@@ -1,11 +1,15 @@
 import { useState } from 'react';
 
 import { Simulator } from './components/Simulator';
+import { History } from './components/History';
+import { useSimulatorHistory } from './components/useSimulatorHistory';
 
 type Theme = 'default' | 'portal' | 'sixties';
 
 export function App() {
   const [theme, setTheme] = useState<Theme>('default');
+  const { rounds, addRound } = useSimulatorHistory();
+
   return (
     <>
       <h1>Cave Catching Simulator</h1>
@@ -46,7 +50,9 @@ export function App() {
         </small>
       </div>
 
-      <Simulator theme={theme} />
+      <Simulator theme={theme} addRound={addRound} />
+
+      <History rounds={rounds} />
     </>
   );
 }
