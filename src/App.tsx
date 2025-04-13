@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { Breeds } from './components/Breeds';
 import { Simulator } from './components/Simulator';
 import { History } from './components/History';
 import { useSimulatorHistory } from './components/useSimulatorHistory';
@@ -49,6 +50,8 @@ export function App() {
           All background, font, and image assets belong to Dragon Cave.
         </small>
       </div>
+
+      <Breeds />
 
       <Simulator theme={theme} addRound={addRound} />
 
