@@ -1,16 +1,17 @@
-import { useState, type ChangeEvent } from 'react';
+import { type ChangeEvent } from 'react';
 
 import { rareBreeds } from '../eggUtils';
 
-export function Breeds() {
-  const [breeds, setBreeds] = useState<string[]>(rareBreeds);
-
+export function Breeds({
+  addBreed,
+  removeBreed,
+}: {
+  addBreed: (breed: string) => void;
+  removeBreed: (breed: string) => void;
+}) {
   const handleCheck = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.checked === false) {
-      setBreeds(breeds.filter((b) => b !== e.target.name));
-    } else {
-      setBreeds([...breeds, e.target.name]);
-    }
+    if (e.target.checked === false) removeBreed(e.target.name);
+    else addBreed(e.target.name);
   };
 
   return (

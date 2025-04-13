@@ -4,12 +4,14 @@ import { Breeds } from './components/Breeds';
 import { Simulator } from './components/Simulator';
 import { History } from './components/History';
 import { useSimulatorHistory } from './components/useSimulatorHistory';
+import { useSimulatorBreeds } from './components/useSimulatorBreeds';
 
 type Theme = 'default' | 'portal' | 'sixties';
 
 export function App() {
   const [theme, setTheme] = useState<Theme>('default');
   const { rounds, addRound, wipeRounds } = useSimulatorHistory();
+  const { removeBreed, addBreed } = useSimulatorBreeds();
 
   return (
     <>
@@ -51,7 +53,7 @@ export function App() {
         </small>
       </div>
 
-      <Breeds />
+      <Breeds addBreed={addBreed} removeBreed={removeBreed} />
 
       <Simulator theme={theme} addRound={addRound} />
 
