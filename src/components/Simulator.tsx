@@ -6,9 +6,11 @@ import { type EndRoundStats, type Biome } from '../types';
 import { useSimulatorRound } from './useSimulatorRound';
 
 export function Simulator({
+  breeds,
   theme,
   addRound,
 }: {
+  breeds: string[];
   theme: string;
   addRound: (round: EndRoundStats) => void;
 }) {
@@ -43,7 +45,10 @@ export function Simulator({
   }, []);
 
   return (
-    <div className={`simulator ${theme}`} ref={simulatorRef}>
+    <div
+      className={`simulator ${theme}${breeds.length < 1 ? ' disabled' : ''}`}
+      ref={simulatorRef}
+    >
       {/* biome header */}
       <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
 

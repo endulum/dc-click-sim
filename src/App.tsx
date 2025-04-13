@@ -11,7 +11,7 @@ type Theme = 'default' | 'portal' | 'sixties';
 export function App() {
   const [theme, setTheme] = useState<Theme>('default');
   const { rounds, addRound, wipeRounds } = useSimulatorHistory();
-  const { removeBreed, addBreed } = useSimulatorBreeds();
+  const { simTargetBreeds, removeBreed, addBreed } = useSimulatorBreeds();
 
   return (
     <>
@@ -55,7 +55,13 @@ export function App() {
 
       <Breeds addBreed={addBreed} removeBreed={removeBreed} />
 
-      <Simulator theme={theme} addRound={addRound} />
+      {simTargetBreeds.length < 1 && (
+        <p>
+          <b>You need at least one breed selected to play the simulator.</b>
+        </p>
+      )}
+
+      <Simulator breeds={simTargetBreeds} theme={theme} addRound={addRound} />
 
       <History rounds={rounds} wipeRounds={wipeRounds} />
     </>
