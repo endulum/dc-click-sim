@@ -16,6 +16,8 @@ const rareEggs: Egg[] = [
   },
 ];
 
+export const rareBreeds = rareEggs.map((r) => r.breed);
+
 function getRandomRareEgg(): Egg {
   return rareEggs[Math.floor(Math.random() * rareEggs.length)];
 }

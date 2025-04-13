@@ -1,11 +1,9 @@
 import { useState, type ChangeEvent } from 'react';
 
+import { rareBreeds } from '../eggUtils';
+
 export function Breeds() {
-  const [breeds, setBreeds] = useState<string[]>([
-    'Silver',
-    'Gold',
-    'Staterae',
-  ]);
+  const [breeds, setBreeds] = useState<string[]>(rareBreeds);
 
   const handleCheck = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked === false) {
@@ -19,7 +17,7 @@ export function Breeds() {
     <div>
       <h3>Breeds to simulate</h3>
       <div className="checkboxes">
-        {['Silver', 'Gold', 'Staterae'].map((breed) => (
+        {rareBreeds.map((breed) => (
           <div className="checkbox-row" key={breed}>
             <input
               type="checkbox"
