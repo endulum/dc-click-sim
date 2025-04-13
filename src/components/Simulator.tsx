@@ -24,7 +24,10 @@ export function Simulator({
     handleClick,
     handleEggCatch,
     startGame,
-  } = useSimulatorRound((stats) => addRound(stats));
+  } = useSimulatorRound({
+    selectedBreeds: breeds,
+    handleRoundStats: (stats) => addRound(stats),
+  });
 
   const handleRefresh = (e: KeyboardEvent) => {
     if (e.code === 'Space') {
