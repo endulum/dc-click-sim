@@ -51,6 +51,7 @@ export function Simulator({
     <div
       className={`simulator ${theme}${breeds.length < 1 ? ' disabled' : ''}`}
       ref={simulatorRef}
+      {...(breeds.length < 1 && { inert: true })}
     >
       {/* biome header */}
       <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
