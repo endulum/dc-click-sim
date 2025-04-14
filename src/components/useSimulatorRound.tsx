@@ -6,7 +6,7 @@ import {
   type RoundStats,
   type EndRoundStats,
 } from '../types';
-import { generateBiomeEggs } from '../eggUtils';
+import { generateBiomeEggs } from '../eggs/eggUtils';
 
 export function useSimulatorRound({
   selectedBreeds,

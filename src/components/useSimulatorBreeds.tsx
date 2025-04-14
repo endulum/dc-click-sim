@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { rareBreeds } from '../eggUtils';
+import { rareBreeds } from '../eggs/eggUtils';
 
 export function useSimulatorBreeds() {
   const [simTargetBreeds, setSimTargetBreeds] = useState<string[]>(rareBreeds);

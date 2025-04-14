@@ -1,6 +1,6 @@
 import { type ChangeEvent } from 'react';
 
-import { rareBreeds } from '../eggUtils';
+import { rareBreeds } from '../eggs/eggUtils';
 
 export function Breeds({
   addBreed,

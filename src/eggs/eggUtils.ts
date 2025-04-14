@@ -1,5 +1,5 @@
 import data from './eggs.json';
-import { type Biome, type Egg } from './types';
+import { type Biome, type Egg } from '../types';
 
 const rareEggs: Egg[] = [
   {
