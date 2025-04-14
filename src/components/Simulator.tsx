@@ -45,7 +45,7 @@ export function Simulator({
       if (simulatorRef.current)
         simulatorRef.current.removeEventListener('click', handleClick);
     };
-  }, []);
+  }, [breeds]);
 
   return (
     <div
