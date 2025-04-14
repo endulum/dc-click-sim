@@ -4,6 +4,7 @@ import MysteryEgg from '../assets/egg.gif';
 
 import { type EndRoundStats, type Biome } from '../types';
 import { useSimulatorRound } from './useSimulatorRound';
+import { useHover } from 'usehooks-ts';
 
 export function Simulator({
   breeds,
@@ -15,6 +16,10 @@ export function Simulator({
   addRound: (round: EndRoundStats) => void;
 }) {
   const simulatorRef = useRef<HTMLDivElement>(null);
+  const isHovering = useHover(
+    simulatorRef as unknown as React.RefObject<HTMLDivElement>
+    // coercing because bug: https://github.com/juliencrn/usehooks-ts/issues/681
+  );
 
   const {
     biome,
@@ -36,16 +41,31 @@ export function Simulator({
     }
   };
 
-  useEffect(() => {
+  const addSimEvents = () => {
     document.addEventListener('keypress', handleRefresh);
     if (simulatorRef.current)
       simulatorRef.current.addEventListener('click', handleClick);
+  };
+
+  const removeSimEvents = () => {
+    document.removeEventListener('keypress', handleRefresh);
+    if (simulatorRef.current)
+      simulatorRef.current.removeEventListener('click', handleClick);
+  };
+
+  useEffect(() => {
+    if (isHovering) {
+      if (document.activeElement) {
+        (document.activeElement as HTMLElement).blur();
+      }
+      addSimEvents();
+    } else {
+      removeSimEvents();
+    }
     return () => {
-      document.removeEventListener('keypress', handleRefresh);
-      if (simulatorRef.current)
-        simulatorRef.current.removeEventListener('click', handleClick);
+      removeSimEvents();
     };
-  }, [breeds]);
+  }, [breeds, isHovering]);
 
   return (
     <div
@@ -112,7 +132,7 @@ export function Simulator({
                 .fill('???')
                 .map((egg, index) => (
                   <div className="egg disabled" key={egg + index}>
-                    <a href="#egg">
+                    <a href="#egg" tabIndex={-1}>
                       <img src={MysteryEgg} />
                     </a>
                     <br />
@@ -139,8 +159,8 @@ export function Simulator({
               }}
             >
               clicking here
-            </a>{' '}
-            or hitting the spacebar.
+            </a>
+            , or hitting the spacebar (while hovering over this window).
           </p>
         )}
       </div>
