@@ -236,3 +236,15 @@ p a {
     }
   }
 }
+
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.checkbox-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}

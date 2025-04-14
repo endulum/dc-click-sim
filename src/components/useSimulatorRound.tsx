@@ -8,9 +8,13 @@ import {
 } from '../types';
 import { generateBiomeEggs } from '../eggUtils';
 
-export function useSimulatorRound(
-  handleRoundStats: (roundStats: EndRoundStats) => void
-) {
+export function useSimulatorRound({
+  selectedBreeds,
+  handleRoundStats,
+}: {
+  selectedBreeds: string[];
+  handleRoundStats: (roundStats: EndRoundStats) => void;
+}) {
   // what biome are we viewing right now?
   const [biome, setBiome] = useState<Biome>('alpine');
 
@@ -44,7 +48,7 @@ export function useSimulatorRound(
   };
 
   function startGame() {
-    const generatedEggs = generateBiomeEggs();
+    const generatedEggs = generateBiomeEggs(selectedBreeds);
     setEggs(generatedEggs.eggs);
     roundStats.current = {
       rareEgg: generatedEggs.rareEgg,

@@ -4,15 +4,22 @@ import MysteryEgg from '../assets/egg.gif';
 
 import { type EndRoundStats, type Biome } from '../types';
 import { useSimulatorRound } from './useSimulatorRound';
+import { useHover } from 'usehooks-ts';
 
 export function Simulator({
+  breeds,
   theme,
   addRound,
 }: {
+  breeds: string[];
   theme: string;
   addRound: (round: EndRoundStats) => void;
 }) {
   const simulatorRef = useRef<HTMLDivElement>(null);
+  const isHovering = useHover(
+    simulatorRef as unknown as React.RefObject<HTMLDivElement>
+    // coercing because bug: https://github.com/juliencrn/usehooks-ts/issues/681
+  );
 
   const {
     biome,
@@ -22,7 +29,10 @@ export function Simulator({
     handleClick,
     handleEggCatch,
     startGame,
-  } = useSimulatorRound((stats) => addRound(stats));
+  } = useSimulatorRound({
+    selectedBreeds: breeds,
+    handleRoundStats: (stats) => addRound(stats),
+  });
 
   const handleRefresh = (e: KeyboardEvent) => {
     if (e.code === 'Space') {
@@ -31,19 +41,38 @@ export function Simulator({
     }
   };
 
-  useEffect(() => {
+  const addSimEvents = () => {
     document.addEventListener('keypress', handleRefresh);
     if (simulatorRef.current)
       simulatorRef.current.addEventListener('click', handleClick);
+  };
+
+  const removeSimEvents = () => {
+    document.removeEventListener('keypress', handleRefresh);
+    if (simulatorRef.current)
+      simulatorRef.current.removeEventListener('click', handleClick);
+  };
+
+  useEffect(() => {
+    if (isHovering) {
+      if (document.activeElement) {
+        (document.activeElement as HTMLElement).blur();
+      }
+      addSimEvents();
+    } else {
+      removeSimEvents();
+    }
     return () => {
-      document.removeEventListener('keypress', handleRefresh);
-      if (simulatorRef.current)
-        simulatorRef.current.removeEventListener('click', handleClick);
+      removeSimEvents();
     };
-  }, []);
+  }, [breeds, isHovering]);
 
   return (
-    <div className={`simulator ${theme}`} ref={simulatorRef}>
+    <div
+      className={`simulator ${theme}${breeds.length < 1 ? ' disabled' : ''}`}
+      ref={simulatorRef}
+      {...(breeds.length < 1 && { inert: true })}
+    >
       {/* biome header */}
       <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>
 
@@ -103,7 +132,7 @@ export function Simulator({
                 .fill('???')
                 .map((egg, index) => (
                   <div className="egg disabled" key={egg + index}>
-                    <a href="#egg">
+                    <a href="#egg" tabIndex={-1}>
                       <img src={MysteryEgg} />
                     </a>
                     <br />
@@ -130,8 +159,8 @@ export function Simulator({
               }}
             >
               clicking here
-            </a>{' '}
-            or hitting the spacebar.
+            </a>
+            , or hitting the spacebar (while hovering over this window).
           </p>
         )}
       </div>

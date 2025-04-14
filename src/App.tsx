@@ -1,14 +1,17 @@
 import { useState } from 'react';
 
+import { Breeds } from './components/Breeds';
 import { Simulator } from './components/Simulator';
 import { History } from './components/History';
 import { useSimulatorHistory } from './components/useSimulatorHistory';
+import { useSimulatorBreeds } from './components/useSimulatorBreeds';
 
 type Theme = 'default' | 'portal' | 'sixties';
 
 export function App() {
   const [theme, setTheme] = useState<Theme>('default');
   const { rounds, addRound, wipeRounds } = useSimulatorHistory();
+  const { simTargetBreeds, removeBreed, addBreed } = useSimulatorBreeds();
 
   return (
     <>
@@ -50,7 +53,15 @@ export function App() {
         </small>
       </div>
 
-      <Simulator theme={theme} addRound={addRound} />
+      <Breeds addBreed={addBreed} removeBreed={removeBreed} />
+
+      {simTargetBreeds.length < 1 && (
+        <p>
+          <b>You need at least one breed selected to play the simulator.</b>
+        </p>
+      )}
+
+      <Simulator breeds={simTargetBreeds} theme={theme} addRound={addRound} />
 
       <History rounds={rounds} wipeRounds={wipeRounds} />
     </>

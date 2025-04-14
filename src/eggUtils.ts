@@ -16,16 +16,19 @@ const rareEggs: Egg[] = [
   },
 ];
 
-function getRandomRareEgg(): Egg {
-  return rareEggs[Math.floor(Math.random() * rareEggs.length)];
+export const rareBreeds = rareEggs.map((r) => r.breed);
+
+function getRandomRareEgg(selectedBreeds: string[]): Egg {
+  const filteredEggs = rareEggs.filter((r) => selectedBreeds.includes(r.breed));
+  return filteredEggs[Math.floor(Math.random() * filteredEggs.length)];
 }
 
-export function generateBiomeEggs() {
+export function generateBiomeEggs(selectedBreeds: string[]) {
   const eggs: Partial<Record<Biome, Egg[]>> = {};
 
   // randomly pick the biome where we'll swap in a rare
   const randomBiomeIndex = Math.floor(Math.random() * 6);
-  const rareEgg = getRandomRareEgg();
+  const rareEgg = getRandomRareEgg(selectedBreeds);
   let rareEggLocation: Biome = 'alpine';
 
   Object.keys(data).forEach((biomeKey, index) => {
