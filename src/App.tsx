@@ -53,7 +53,8 @@ export function App() {
             <option value="default">Default</option>
             <option value="portal">Portal 2 Light</option>
             <option value="sixties">1960's</option>
-            <option value="mobile">Mobile</option>
+            <option value="mobile-light">Mobile (light)</option>
+            <option value="mobile-dark">Mobile (dark)</option>
           </select>
         </label>
         <small>

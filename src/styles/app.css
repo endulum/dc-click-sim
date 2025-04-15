@@ -179,13 +179,14 @@ p a {
     }
   }
 
-  &.mobile {
+  &.mobile-light,
+  &.mobile-dark {
     padding: 0;
     width: 100vw;
     margin-left: -1rem;
     margin-right: -1rem;
     max-width: 700px;
-    background-color: #eee;
+
     font: 14px 'Roboto', Helvetica, Arial, sans-serif;
 
     h1 {
@@ -206,6 +207,7 @@ p a {
 
     a {
       text-decoration: none;
+      color: #2562cc;
       b {
         font-family: 'Roboto Bold';
       }
@@ -218,10 +220,28 @@ p a {
       padding: 12px;
     }
   }
+
+  &.mobile-light {
+    background-color: #eee;
+  }
+
+  &.mobile-dark {
+    background-color: #13151a;
+    color: white;
+
+    section {
+      background-color: #2b303a;
+    }
+
+    a {
+      color: #5f9aff;
+    }
+  }
 }
 
 @container simulator (max-width: 600px) {
-  .mobile {
+  .mobile-dark,
+  .mobile-light {
     ul {
       justify-content: flex-start;
     }
