@@ -1,7 +1,7 @@
 import data from './eggs.json';
 import { type Biome, type Egg } from '../types';
 
-const rareEggs: Egg[] = [
+export const rareEggs: Egg[] = [
   {
     breed: 'Gold',
     description: 'This egg is very reflective, almost metallic-looking.',
@@ -15,6 +15,8 @@ const rareEggs: Egg[] = [
     description: 'Mana flows like a current through this glassy egg.',
   },
 ];
+
+export const rareBreeds: string[] = rareEggs.map((r) => r.breed);
 
 function generateRareEgg(selectedRares: string[]): Egg {
   const filteredEggs = rareEggs.filter((r) => selectedRares.includes(r.breed));

@@ -31,6 +31,7 @@ export function Simulator({
     startGame,
   } = useSimulatorRound({
     selectedBreeds: breeds,
+    selectedPositions: ['left', 'middle', 'right'],
     handleRoundStats: (stats) => addRound(stats),
   });
 
@@ -146,7 +147,7 @@ export function Simulator({
       <div className="simulator-status">
         {roundStats.current ? (
           <p>
-            Find the <b>{roundStats.current.rareEgg.breed}</b> egg!
+            Find the <b>{roundStats.current.breed}</b> egg!
           </p>
         ) : (
           <p>

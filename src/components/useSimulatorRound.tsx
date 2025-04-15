@@ -6,13 +6,15 @@ import {
   type RoundStats,
   type EndRoundStats,
 } from '../types';
-import { generateBiomeEggs } from '../eggs/eggUtils';
+import { generateAllEggs } from '../eggs/eggUtils';
 
 export function useSimulatorRound({
   selectedBreeds,
+  selectedPositions,
   handleRoundStats,
 }: {
   selectedBreeds: string[];
+  selectedPositions: string[];
   handleRoundStats: (roundStats: EndRoundStats) => void;
 }) {
   // what biome are we viewing right now?
@@ -27,15 +29,14 @@ export function useSimulatorRound({
   const handleBiomeChange = (nextBiome: Biome) => {
     if (roundStats.current) {
       roundStats.current.visits++;
-      if (roundStats.current.rareEgg.location === biome)
-        roundStats.current.skips++;
+      if (roundStats.current.location === biome) roundStats.current.skips++;
     }
     setBiome(nextBiome);
   };
 
   const handleEggCatch = (egg: Egg) => {
     if (roundStats.current) {
-      if (roundStats.current.rareEgg.breed !== egg.breed)
+      if (roundStats.current.breed !== egg.breed)
         roundStats.current.misclicks++;
       else endGame();
     }
@@ -48,10 +49,10 @@ export function useSimulatorRound({
   };
 
   function startGame() {
-    const generatedEggs = generateBiomeEggs(selectedBreeds);
+    const generatedEggs = generateAllEggs(selectedBreeds, selectedPositions);
     setEggs(generatedEggs.eggs);
     roundStats.current = {
-      rareEgg: generatedEggs.rareEgg,
+      ...generatedEggs.target,
       start: performance.now(),
       visits: 0,
       skips: 0,

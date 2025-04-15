@@ -9,8 +9,14 @@ export type Biome =
 export type Egg = { breed: string; description: string };
 
 export type RoundStats = {
-  rareEgg: Egg & { location: Biome };
-  // what rare was meant to be caught, and where it was
+  breed: string;
+  // what rare was meant to be caught
+
+  location: string;
+  // where the rare was
+
+  position: string;
+  // which slot the rare took
 
   start: number;
   // performance.now() of the round
