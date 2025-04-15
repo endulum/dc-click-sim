@@ -8,10 +8,12 @@ import { useHover } from 'usehooks-ts';
 
 export function Simulator({
   breeds,
+  positions,
   theme,
   addRound,
 }: {
   breeds: string[];
+  positions: string[];
   theme: string;
   addRound: (round: EndRoundStats) => void;
 }) {
@@ -31,7 +33,7 @@ export function Simulator({
     startGame,
   } = useSimulatorRound({
     selectedBreeds: breeds,
-    selectedPositions: ['left', 'middle', 'right'],
+    selectedPositions: positions,
     handleRoundStats: (stats) => addRound(stats),
   });
 
@@ -70,9 +72,11 @@ export function Simulator({
 
   return (
     <div
-      className={`simulator ${theme}${breeds.length < 1 ? ' disabled' : ''}`}
+      className={`simulator ${theme}${
+        breeds.length < 1 || positions.length < 1 ? ' disabled' : ''
+      }`}
       ref={simulatorRef}
-      {...(breeds.length < 1 && { inert: true })}
+      {...((breeds.length < 1 || positions.length < 1) && { inert: true })}
     >
       {/* biome header */}
       <h1>{biome[0].toUpperCase() + biome.substring(1)}</h1>

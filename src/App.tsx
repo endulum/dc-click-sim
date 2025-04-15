@@ -1,17 +1,24 @@
 import { useState } from 'react';
 
-import { Breeds } from './components/Breeds';
+import { Settings } from './components/Settings';
 import { Simulator } from './components/Simulator';
 import { History } from './components/History';
 import { useSimulatorHistory } from './components/useSimulatorHistory';
-import { useSimulatorBreeds } from './components/useSimulatorBreeds';
+import { useSimulatorSettings } from './components/useSimulatorSettings';
 
 type Theme = 'default' | 'portal' | 'sixties';
 
 export function App() {
   const [theme, setTheme] = useState<Theme>('default');
   const { rounds, addRound, wipeRounds } = useSimulatorHistory();
-  const { simTargetBreeds, removeBreed, addBreed } = useSimulatorBreeds();
+  const {
+    simTargetBreeds,
+    removeBreed,
+    addBreed,
+    simPositions,
+    addPos,
+    removePos,
+  } = useSimulatorSettings();
 
   return (
     <>
@@ -53,7 +60,12 @@ export function App() {
         </small>
       </div>
 
-      <Breeds addBreed={addBreed} removeBreed={removeBreed} />
+      <Settings
+        addBreed={addBreed}
+        removeBreed={removeBreed}
+        addPos={addPos}
+        removePos={removePos}
+      />
 
       {simTargetBreeds.length < 1 && (
         <p>
@@ -61,7 +73,21 @@ export function App() {
         </p>
       )}
 
-      <Simulator breeds={simTargetBreeds} theme={theme} addRound={addRound} />
+      {simPositions.length < 1 && (
+        <p>
+          <b>
+            You need at least one egg spawn position selected to play the
+            simulator.
+          </b>
+        </p>
+      )}
+
+      <Simulator
+        breeds={simTargetBreeds}
+        positions={simPositions}
+        theme={theme}
+        addRound={addRound}
+      />
 
       <History rounds={rounds} wipeRounds={wipeRounds} />
     </>
