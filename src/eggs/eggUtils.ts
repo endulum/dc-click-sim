@@ -67,6 +67,10 @@ export function generateAllEggs(
 
   return {
     eggs: allEggs,
-    target: rareEgg.breed,
+    target: {
+      breed: rareEgg.breed,
+      location: Object.keys(data)[randomIndex],
+      position: ['left', 'middle', 'right'][rareEggPosition],
+    },
   };
 }

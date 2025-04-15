@@ -58,7 +58,7 @@ describe('consistent behavior', () => {
       const output = generateAllEggs(defaults[0], randomSelection);
 
       Object.values(output.eggs).forEach((biome) => {
-        const rareEgg = biome.find((e) => e.breed === output.target);
+        const rareEgg = biome.find((e) => e.breed === output.target.breed);
         if (rareEgg) {
           const expectedPoses: number[] = [];
           ['left', 'middle', 'right'].forEach((pos, index) => {
