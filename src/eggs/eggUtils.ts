@@ -14,6 +14,19 @@ export const rareEggs: Egg[] = [
     breed: 'Staterae',
     description: 'Mana flows like a current through this glassy egg.',
   },
+  {
+    breed: 'Cheese',
+    description: 'This egg is soft and smells uncannily like cheese.',
+  },
+  {
+    breed: 'Chicken',
+    description: 'This egg is much smaller than the others.',
+  },
+  {
+    breed: 'Paper',
+    description:
+      'This egg is tiny and made out of several pieces of paper folded together.',
+  },
 ];
 
 export const rareBreeds: string[] = rareEggs.map((r) => r.breed);

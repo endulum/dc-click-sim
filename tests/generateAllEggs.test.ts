@@ -33,9 +33,10 @@ describe('consistent behavior', () => {
 
   test('with custom rare selection', () => {
     for (let i = 0; i < iterations; i++) {
+      const allRares = [...defaults[0], 'Cheese', 'Chicken', 'Paper'];
       // get random rare selection
-      const randomCount = Math.floor(Math.random() * defaults[0].length) + 1;
-      const shuffledBreeds = defaults[0].sort(() => 0.5 - Math.random());
+      const randomCount = Math.floor(Math.random() * allRares.length) + 1;
+      const shuffledBreeds = allRares.sort(() => 0.5 - Math.random());
       const randomSelection = shuffledBreeds.slice(0, randomCount);
 
       const output = generateAllEggs(randomSelection, defaults[1]);

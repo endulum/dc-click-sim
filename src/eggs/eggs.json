@@ -309,10 +309,6 @@
       "description": "Mana courses throughout this glassy egg."
     },
     {
-      "breed": "Zyumorph",
-      "description": "This shiny egg seems to radiate power."
-    },
-    {
       "breed": "Ciriax Lindwyrm",
       "description": "This opalescent egg shimmers in the moonlight."
     },
@@ -429,10 +425,6 @@
     {
       "breed": "Blacktip",
       "description": "This egg is off-white in color and smells a bit like salt."
-    },
-    {
-      "breed": "Blusang Lindwyrm",
-      "description": "This egg smells faintly like brine."
     },
     {
       "breed": "Candelabra",
@@ -1006,10 +998,6 @@
     }
   ],
   "forest": [
-    {
-      "breed": "Aeon Wyvern",
-      "description": "It’s almost like time is distorted around this egg."
-    },
     {
       "breed": "Albino",
       "description": "You can see the baby dragon curled up inside this translucent egg."
@@ -1789,10 +1777,6 @@
     {
       "breed": "Celestial",
       "description": "This translucent egg shines like starlight."
-    },
-    {
-      "breed": "Copper",
-      "description": "This egg gleams with a reddish shine."
     },
     {
       "breed": "Dark Lumina",
