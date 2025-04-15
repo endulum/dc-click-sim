@@ -16,37 +16,57 @@ const rareEggs: Egg[] = [
   },
 ];
 
-export const rareBreeds = rareEggs.map((r) => r.breed);
+function generateRareEgg(selectedRares: string[]): Egg {
+  const filteredEggs = rareEggs.filter((r) => selectedRares.includes(r.breed));
 
-function getRandomRareEgg(selectedBreeds: string[]): Egg {
-  const filteredEggs = rareEggs.filter((r) => selectedBreeds.includes(r.breed));
+  if (filteredEggs.length === 0)
+    throw new Error(
+      `No rares filtered with selection: ${JSON.stringify(selectedRares)}`
+    );
+
   return filteredEggs[Math.floor(Math.random() * filteredEggs.length)];
 }
 
-export function generateBiomeEggs(selectedBreeds: string[]) {
-  const eggs: Partial<Record<Biome, Egg[]>> = {};
+function generateRarePos(selectedPositions: string[]): number {
+  const positions: number[] = [];
+  ['left', 'middle', 'right'].forEach((pos, index) => {
+    if (selectedPositions.includes(pos)) positions.push(index);
+  });
 
-  // randomly pick the biome where we'll swap in a rare
-  const randomBiomeIndex = Math.floor(Math.random() * 6);
-  const rareEgg = getRandomRareEgg(selectedBreeds);
-  let rareEggLocation: Biome = 'alpine';
+  if (selectedPositions.length === 0)
+    throw new Error(
+      `No positions filtered with selection: ${JSON.stringify(
+        selectedPositions
+      )}`
+    );
 
-  Object.keys(data).forEach((biomeKey, index) => {
-    const thisBiomeEggs = data[biomeKey as Biome]
+  return positions[Math.floor(Math.random() * positions.length)];
+}
+
+export function generateAllEggs(
+  selectedRares: string[],
+  selectedPositions: string[]
+) {
+  const allEggs: Partial<Record<Biome, Egg[]>> = {};
+  const randomIndex = Math.floor(Math.random() * 6);
+
+  const rareEgg = generateRareEgg(selectedRares);
+  const rareEggPosition = generateRarePos(selectedPositions);
+
+  Object.keys(data).forEach((biome, index) => {
+    const thisBiomeEggs = data[biome as Biome]
       .sort(() => 0.5 - Math.random())
       .slice(0, 3);
 
-    // if this biome's index matches the random index we pulled, swap in the rare
-    if (index === randomBiomeIndex) {
-      thisBiomeEggs[Math.floor(Math.random() * 3)] = rareEgg;
-      rareEggLocation = biomeKey as Biome;
+    if (index === randomIndex) {
+      thisBiomeEggs[rareEggPosition] = rareEgg;
     }
 
-    eggs[biomeKey as Biome] = thisBiomeEggs;
+    allEggs[biome as Biome] = thisBiomeEggs;
   });
 
   return {
-    eggs,
-    rareEgg: { ...rareEgg, location: rareEggLocation },
+    eggs: allEggs,
+    target: rareEgg.breed,
   };
 }
