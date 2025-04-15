@@ -273,6 +273,9 @@ p a {
     text-decoration: underline !important;
     font-weight: bold;
   }
+  b {
+    font-weight: bold;
+  }
 }
 
 .mobile-dark .simulator-status,
