@@ -148,24 +148,24 @@ export function Simulator({
       </section>
 
       {/* game status message */}
-      <div className="simulator-status">
+      <div
+        className="simulator-status"
+        onClick={() => {
+          if (!roundStats.current) startGame();
+        }}
+      >
         {roundStats.current ? (
           <p>
             Find the <b>{roundStats.current.breed}</b> egg!
           </p>
         ) : (
           <p>
-            Start the round by{' '}
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                startGame();
-              }}
-            >
-              clicking here
-            </a>
-            , or hitting the spacebar (while hovering over this window).
+            Start the round by clicking or tapping anywhere in this box.
+            <br />
+            <small>
+              You can also hover over this simulator window and hit the
+              spacebar.
+            </small>
           </p>
         )}
       </div>
