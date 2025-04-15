@@ -35,7 +35,7 @@ export function Settings({
                 name={breed}
                 id={breed}
                 onChange={handleBreedCheck}
-                defaultChecked={true}
+                defaultChecked={['Gold', 'Silver', 'Staterae'].includes(breed)}
               />
               <label htmlFor={breed}>{breed}</label>
             </div>

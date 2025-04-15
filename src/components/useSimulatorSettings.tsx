@@ -3,7 +3,9 @@ import { useState } from 'react';
 import { rareBreeds } from '../eggs/eggUtils';
 
 export function useSimulatorSettings() {
-  const [simTargetBreeds, setSimTargetBreeds] = useState<string[]>(rareBreeds);
+  const [simTargetBreeds, setSimTargetBreeds] = useState<string[]>(
+    rareBreeds.filter((breed) => ['Gold', 'Silver', 'Staterae'].includes(breed))
+  );
 
   const removeBreed = (breed: string) => {
     setSimTargetBreeds(simTargetBreeds.filter((b) => b !== breed));
