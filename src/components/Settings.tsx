@@ -24,37 +24,41 @@ export function Settings({
   };
 
   return (
-    <div>
-      <h3>Breeds to simulate</h3>
-      <div className="checkboxes">
-        {rareBreeds.map((breed) => (
-          <div className="checkbox-row" key={breed}>
-            <input
-              type="checkbox"
-              name={breed}
-              id={breed}
-              onChange={handleBreedCheck}
-              defaultChecked={true}
-            />
-            <label htmlFor={breed}>{breed}</label>
-          </div>
-        ))}
+    <div className="settings">
+      <div className="setting">
+        <h3>Breeds to simulate</h3>
+        <div className="checkboxes">
+          {rareBreeds.map((breed) => (
+            <div className="checkbox-row" key={breed}>
+              <input
+                type="checkbox"
+                name={breed}
+                id={breed}
+                onChange={handleBreedCheck}
+                defaultChecked={true}
+              />
+              <label htmlFor={breed}>{breed}</label>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <h3>Allowed egg spawn positions</h3>
-      <div className="checkboxes">
-        {['left', 'middle', 'right'].map((pos) => (
-          <div className="checkbox-row" key={pos}>
-            <input
-              type="checkbox"
-              name={pos}
-              id={pos}
-              onChange={handlePosCheck}
-              defaultChecked={true}
-            />
-            <label htmlFor={pos}>{pos}</label>
-          </div>
-        ))}
+      <div className="setting">
+        <h3>Allowed egg spawn positions</h3>
+        <div className="checkboxes">
+          {['left', 'middle', 'right'].map((pos) => (
+            <div className="checkbox-row" key={pos}>
+              <input
+                type="checkbox"
+                name={pos}
+                id={pos}
+                onChange={handlePosCheck}
+                defaultChecked={true}
+              />
+              <label htmlFor={pos}>{pos}</label>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
