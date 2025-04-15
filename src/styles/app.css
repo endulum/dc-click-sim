@@ -345,6 +345,12 @@ p a {
   column-gap: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .checkboxes {
+    flex-direction: column;
+  }
+}
+
 .checkbox-row {
   display: flex;
   flex-direction: row;
@@ -354,7 +360,7 @@ p a {
 .settings {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .setting {
