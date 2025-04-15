@@ -26,7 +26,7 @@ export default tseslint.config(
       'no-console': [
         'warn',
         {
-          allow: ['warn', 'error'],
+          allow: ['warn', 'error', 'dir'],
         },
       ],
       'react-hooks/exhaustive-deps': 'off',

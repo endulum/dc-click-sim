@@ -27,6 +27,7 @@ export function History({
               <tr>
                 <td>#</td>
                 <td>Breed</td>
+                <td>Position</td>
                 <td>Total time</td>
                 <td>Biome visits</td>
                 <td>Avg. skim (time ÷ visits)</td>
@@ -39,7 +40,8 @@ export function History({
                 .map((round, index) => (
                   <tr key={round.start}>
                     <td>{index + 1}</td>
-                    <td>{round.rareEgg.breed}</td>
+                    <td>{round.breed}</td>
+                    <td>{round.position}</td>
                     <td>≈{msToSecs(round.time)}</td>
                     <td>{round.visits}</td>
                     <td>≈{msToSecs(round.time / (round.visits + 1))}</td>
