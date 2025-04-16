@@ -44,7 +44,7 @@ export function Settings({
       </div>
 
       <div className="setting">
-        <h3>Allowed egg spawn positions</h3>
+        <h3>Spawn positions</h3>
         <div className="checkboxes">
           {['left', 'middle', 'right'].map((pos) => (
             <div className="checkbox-row" key={pos}>

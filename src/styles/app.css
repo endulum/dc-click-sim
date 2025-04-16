@@ -23,6 +23,16 @@
   src: url('../assets/portal/DIN-Bold.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/mobile/Roboto.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../assets/mobile/Roboto_Bold.woff2') format('woff2');
+}
+
 body {
   background-color: #18181b;
   color: #d4d4d8;
@@ -43,6 +53,8 @@ p a {
 }
 
 .simulator {
+  margin: auto;
+  container: simulator / inline-size;
   border: 1px solid black;
   padding: 1rem;
   color: black;
@@ -60,7 +72,7 @@ p a {
     font-weight: normal;
   }
 
-  p {
+  section p {
     margin: 0.5rem 0;
     text-indent: 1em;
     text-align: left;
@@ -75,8 +87,9 @@ p a {
 
   .eggs {
     width: 100%;
-    height: 6.5rem;
     image-rendering: pixelated;
+    overflow: hidden;
+    margin-bottom: 1rem;
   }
 
   .egg {
@@ -166,6 +179,93 @@ p a {
       }
     }
   }
+
+  &.mobile-light,
+  &.mobile-dark {
+    padding: 0;
+    width: calc(100vw - 3rem);
+    max-width: 700px;
+
+    font: 14px 'Roboto', Helvetica, Arial, sans-serif;
+
+    h1 {
+      font-weight: bold;
+      padding: 12px 12px;
+      font-size: 18px;
+      line-height: 20px;
+      background-color: #2562cc;
+      color: white;
+    }
+
+    li {
+      margin: 2px 0;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    ul {
+      font-size: 20px;
+      margin: 12px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2562cc;
+      b {
+        font-family: 'Roboto Bold';
+      }
+    }
+
+    section {
+      background-color: white;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 8px;
+      padding: 12px;
+    }
+  }
+
+  &.mobile-light {
+    background-color: #eee;
+  }
+
+  &.mobile-dark {
+    background-color: #13151a;
+    color: white;
+
+    section {
+      background-color: #2b303a;
+    }
+
+    a {
+      color: #5f9aff;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .simulator.mobile-dark,
+  .simulator.mobile-light {
+    width: calc(100vw - 1rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+@container simulator (max-width: 600px) {
+  .mobile-dark,
+  .mobile-light {
+    ul {
+      justify-content: flex-start;
+    }
+    li {
+      margin: 2px 0;
+      text-align: center;
+      flex: 1;
+      flex-basis: 50%;
+    }
+  }
 }
 
 .disabled {
@@ -181,6 +281,21 @@ p a {
   padding: 1rem;
   text-align: center;
   clear: both;
+  color: black !important;
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+  }
+  b {
+    font-weight: bold;
+  }
+}
+
+.mobile-dark .simulator-status,
+.mobile-light .simulator-status {
+  width: calc(100% - 2rem);
+  margin: 1rem;
 }
 
 .simulator {
@@ -208,9 +323,12 @@ p a {
 
 .history .table {
   display: block;
+  max-width: 100%;
   overflow-y: auto;
   max-height: 200px;
   margin-bottom: 1rem;
+  border: 1px solid #d4d4d8;
+  margin-top: 0.5rem;
 }
 
 .history table {
@@ -218,22 +336,30 @@ p a {
   position: relative;
   overflow-y: scroll;
   max-height: 100px;
+  border-collapse: collapse;
 
   thead {
     font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #18181b;
-    td {
-      border-bottom: 1px solid #d4d4d8;
-    }
+    background-color: oklch(from #d4d4d8 calc(l - 0.5) c h);
   }
 
-  tbody {
-    tr:first-of-type {
-      font-weight: bold;
-    }
+  tbody tr:first-of-type {
+    font-weight: bold;
+  }
+
+  td {
+    padding: 0.5rem;
+    min-width: max-content;
+    white-space: nowrap;
+  }
+
+  tr > :first-child {
+    position: sticky;
+    background-color: oklch(from #d4d4d8 calc(l - 0.625) c h);
+    left: 0;
   }
 }
 
@@ -242,6 +368,12 @@ p a {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .checkboxes {
+    flex-direction: column;
+  }
 }
 
 .checkbox-row {
@@ -253,7 +385,7 @@ p a {
 .settings {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .setting {
