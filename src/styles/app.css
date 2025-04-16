@@ -53,6 +53,7 @@ p a {
 }
 
 .simulator {
+  margin: auto;
   container: simulator / inline-size;
   border: 1px solid black;
   padding: 1rem;
@@ -182,9 +183,7 @@ p a {
   &.mobile-light,
   &.mobile-dark {
     padding: 0;
-    width: 100vw;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    width: calc(100vw - 3rem);
     max-width: 700px;
 
     font: 14px 'Roboto', Helvetica, Arial, sans-serif;
@@ -236,6 +235,15 @@ p a {
     a {
       color: #5f9aff;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .simulator.mobile-dark,
+  .simulator.mobile-light {
+    width: 100vw;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 }
 
@@ -309,9 +317,12 @@ p a {
 
 .history .table {
   display: block;
+  max-width: 100%;
   overflow-y: auto;
   max-height: 200px;
   margin-bottom: 1rem;
+  border: 1px solid #d4d4d8;
+  margin-top: 0.5rem;
 }
 
 .history table {
@@ -319,22 +330,30 @@ p a {
   position: relative;
   overflow-y: scroll;
   max-height: 100px;
+  border-collapse: collapse;
 
   thead {
     font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #18181b;
-    td {
-      border-bottom: 1px solid #d4d4d8;
-    }
+    background-color: oklch(from #d4d4d8 calc(l - 0.5) c h);
   }
 
-  tbody {
-    tr:first-of-type {
-      font-weight: bold;
-    }
+  tbody tr:first-of-type {
+    font-weight: bold;
+  }
+
+  td {
+    padding: 0.5rem;
+    min-width: max-content;
+    white-space: nowrap;
+  }
+
+  tr > :first-child {
+    position: sticky;
+    background-color: oklch(from #d4d4d8 calc(l - 0.625) c h);
+    left: 0;
   }
 }
 

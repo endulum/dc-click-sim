@@ -25,22 +25,28 @@ export function History({
           <table>
             <thead>
               <tr>
-                <td>#</td>
                 <td>Breed</td>
                 <td>Position</td>
                 <td>Total time</td>
                 <td>Biome visits</td>
-                <td>Avg. skim (time ÷ visits)</td>
-                <td>Skips</td>
-                <td>Misclicks</td>
+                <td title='Total time taken divided by biome seen. Basically, how long it took you to "skim"-read a biome.'>
+                  Avg. skim
+                </td>
+                <td title="Times you changed biomes over the target egg.">
+                  Skips
+                </td>
+                <td title="Any click that was on an incorrect egg or somewhere on the window that wasn't a biome link or the target egg.">
+                  Misclicks
+                </td>
               </tr>
             </thead>
             <tbody>
               {rounds
                 .map((round, index) => (
                   <tr key={round.start}>
-                    <td>{index + 1}</td>
-                    <td>{round.breed}</td>
+                    <td>
+                      #{index + 1} - {round.breed}
+                    </td>
                     <td>{round.position}</td>
                     <td>≈{msToSecs(round.time)}</td>
                     <td>{round.visits}</td>

@@ -41,6 +41,13 @@ export function App() {
         visits taken, etc.
       </p>
 
+      <Settings
+        addBreed={addBreed}
+        removeBreed={removeBreed}
+        addPos={addPos}
+        removePos={removePos}
+      />
+
       <div className="space-between">
         <label htmlFor="theme">
           <span>Select theme: </span>
@@ -61,13 +68,6 @@ export function App() {
           All background, font, and image assets belong to Dragon Cave.
         </small>
       </div>
-
-      <Settings
-        addBreed={addBreed}
-        removeBreed={removeBreed}
-        addPos={addPos}
-        removePos={removePos}
-      />
 
       {simTargetBreeds.length < 1 && (
         <p>
