@@ -241,7 +241,7 @@ p a {
 @media screen and (max-width: 600px) {
   .simulator.mobile-dark,
   .simulator.mobile-light {
-    width: 100vw;
+    width: calc(100vw - 1rem);
     margin-left: -1rem;
     margin-right: -1rem;
   }
