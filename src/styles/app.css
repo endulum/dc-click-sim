@@ -197,6 +197,12 @@ p a {
       color: white;
     }
 
+    li {
+      margin: 2px 0;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
     ul {
       font-size: 20px;
       margin: 12px 0;
