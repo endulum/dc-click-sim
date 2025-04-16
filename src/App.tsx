@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useWindowSize } from 'usehooks-ts';
 
 import { Settings } from './components/Settings';
 import { Simulator } from './components/Simulator';
@@ -6,10 +7,8 @@ import { History } from './components/History';
 import { useSimulatorHistory } from './components/useSimulatorHistory';
 import { useSimulatorSettings } from './components/useSimulatorSettings';
 
-type Theme = 'default' | 'portal' | 'sixties';
-
 export function App() {
-  const [theme, setTheme] = useState<Theme>('default');
+  const [theme, setTheme] = useState<string>('default');
   const { rounds, addRound, wipeRounds } = useSimulatorHistory();
   const {
     simTargetBreeds,
@@ -19,6 +18,19 @@ export function App() {
     addPos,
     removePos,
   } = useSimulatorSettings();
+
+  const windowSize = useWindowSize();
+
+  useEffect(() => {
+    if (windowSize.width < 800) {
+      if (
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      )
+        setTheme('mobile-dark');
+      else setTheme('mobile-light');
+    }
+  }, []);
 
   return (
     <>
@@ -54,20 +66,34 @@ export function App() {
           <select
             id="theme"
             onChange={(e) => {
-              setTheme(e.target.value as Theme);
+              setTheme(e.target.value);
             }}
+            value={theme}
           >
-            <option value="default">Default</option>
-            <option value="portal">Portal 2 Light</option>
-            <option value="sixties">1960's</option>
-            <option value="mobile-light">Mobile (light)</option>
-            <option value="mobile-dark">Mobile (dark)</option>
+            {[
+              { title: 'Default', value: 'default' },
+              { title: 'Portal 2 Light', value: 'portal' },
+              { title: '1960s', value: 'sixties' },
+              { title: 'Mobile (dark)', value: 'mobile-dark' },
+              { title: 'Mobile (light)', value: 'mobile-light' },
+            ].map((opt) => (
+              <option key={opt.value} value={opt.value}>
+                {opt.title}
+              </option>
+            ))}
           </select>
         </label>
         <small>
           All background, font, and image assets belong to Dragon Cave.
         </small>
       </div>
+
+      {windowSize.width < 800 &&
+        ['default', 'sixties', 'portal'].includes(theme) && (
+          <p>
+            <b>The theme you have selected may not fit on your screen.</b>
+          </p>
+        )}
 
       {simTargetBreeds.length < 1 && (
         <p>
