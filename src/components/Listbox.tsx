@@ -53,9 +53,9 @@ export function Listbox({
         {flyoutOpen ? 'Done' : 'Select'}
       </button>
       {flyoutOpen && (
-        <div className="listbox-flyout">
+        <div className="listbox-flyout" role="listbox">
           {allValues.map((value) => (
-            <div className="listbox-flyout-item" key={value}>
+            <div className="listbox-flyout-item" key={value} role="option">
               <label htmlFor={value}>
                 <input
                   type="checkbox"
