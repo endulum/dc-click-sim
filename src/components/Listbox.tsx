@@ -2,11 +2,13 @@ import { useState, useRef, type ChangeEvent } from 'react';
 import { useOnClickOutside } from 'usehooks-ts';
 
 export function Listbox({
+  id,
   values,
   allValues,
   addValue,
   removeValue,
 }: {
+  id: string;
   values: Array<string>;
   allValues: Array<string>;
   addValue: (item: string) => void;
@@ -44,9 +46,11 @@ export function Listbox({
         if (e.code === 'Escape') setFlyoutOpen(false);
       }}
     >
-      <input type="text" value={values.join(', ')} readOnly />
-      <button onClick={() => setFlyoutOpen(!flyoutOpen)}>
-        {flyoutOpen ? 'Close' : 'Open'}
+      <p>
+        <b>{values.join(', ')}</b>
+      </p>
+      <button id={id} onClick={() => setFlyoutOpen(!flyoutOpen)}>
+        {flyoutOpen ? 'Done' : 'Select'}
       </button>
       {flyoutOpen && (
         <div className="listbox-flyout">

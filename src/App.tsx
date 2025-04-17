@@ -18,8 +18,8 @@ export function App() {
     removeBreed,
     addBreed,
     simPositions,
-    // addPos,
-    // removePos,
+    addPos,
+    removePos,
   } = useSimulatorSettings();
 
   const windowSize = useWindowSize();
@@ -56,42 +56,46 @@ export function App() {
         visits taken, etc.
       </p>
 
-      <div className="space-between">
-        <h3>Breeds to simulate</h3>
+      <h2>Simulator Settings</h2>
+      <div className="settings">
+        <label htmlFor="breeds">Breeds to simulate</label>
         <Listbox
+          id="breeds"
           values={simTargetBreeds}
           allValues={rareBreeds}
           addValue={addBreed}
           removeValue={removeBreed}
         />
-      </div>
 
-      <div className="space-between">
-        <label htmlFor="theme">
-          <span>Select theme: </span>
-          <select
-            id="theme"
-            onChange={(e) => {
-              setTheme(e.target.value);
-            }}
-            value={theme}
-          >
-            {[
-              { title: 'Default', value: 'default' },
-              { title: 'Portal 2 Light', value: 'portal' },
-              { title: '1960s', value: 'sixties' },
-              { title: 'Mobile (dark)', value: 'mobile-dark' },
-              { title: 'Mobile (light)', value: 'mobile-light' },
-            ].map((opt) => (
-              <option key={opt.value} value={opt.value}>
-                {opt.title}
-              </option>
-            ))}
-          </select>
-        </label>
-        <small>
-          All background, font, and image assets belong to Dragon Cave.
-        </small>
+        <label htmlFor="positions">Egg spawn positions</label>
+        <Listbox
+          id="positions"
+          values={simPositions}
+          allValues={['left', 'middle', 'right']}
+          addValue={addPos}
+          removeValue={removePos}
+        />
+
+        <label htmlFor="theme">Select theme</label>
+        <select
+          id="theme"
+          onChange={(e) => {
+            setTheme(e.target.value);
+          }}
+          value={theme}
+        >
+          {[
+            { title: 'Default', value: 'default' },
+            { title: 'Portal 2 Light', value: 'portal' },
+            { title: '1960s', value: 'sixties' },
+            { title: 'Mobile (dark)', value: 'mobile-dark' },
+            { title: 'Mobile (light)', value: 'mobile-light' },
+          ].map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {opt.title}
+            </option>
+          ))}
+        </select>
       </div>
 
       {windowSize.width < 700 &&
