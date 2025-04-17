@@ -363,35 +363,6 @@ p a {
   }
 }
 
-/* .checkboxes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 1rem;
-}
-
-@media screen and (max-width: 600px) {
-  .checkboxes {
-    flex-direction: column;
-  }
-}
-
-.checkbox-row {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-.settings {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-.setting {
-  width: 50%;
-} */
-
 .settings {
   display: grid;
   align-items: center;
