@@ -434,6 +434,7 @@ p a {
   z-index: 1;
   top: calc(100% + 0.25rem);
   width: 100%;
+  min-width: 150px;
   background-color: white;
   border: 1px solid;
   color: #18181b;
