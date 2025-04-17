@@ -125,10 +125,6 @@
       "description": "This heavy egg feels slightly warm."
     },
     {
-      "breed": "Ice",
-      "description": "This egg has icicles forming on it."
-    },
-    {
       "breed": "Imperial Fleshcrowne",
       "description": "This egg is hidden in the trees."
     },
@@ -875,10 +871,6 @@
     {
       "breed": "Sunstone",
       "description": "This egg resembles a glowing stone."
-    },
-    {
-      "breed": "Thunder",
-      "description": "Whenever you go near this egg your hair stands on end."
     },
     {
       "breed": "Turpentine",
@@ -1829,10 +1821,6 @@
     {
       "breed": "Magi",
       "description": "This egg has an orange aura radiating from it."
-    },
-    {
-      "breed": "Magma",
-      "description": "This egg is almost too hot to touch."
     },
     {
       "breed": "Mint",
