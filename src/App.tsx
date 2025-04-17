@@ -88,7 +88,7 @@ export function App() {
         </small>
       </div>
 
-      {windowSize.width < 800 &&
+      {windowSize.width < 700 &&
         ['default', 'sixties', 'portal'].includes(theme) && (
           <p>
             <b>The theme you have selected may not fit on your screen.</b>
