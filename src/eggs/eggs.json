@@ -1,10 +1,6 @@
 {
   "alpine": [
     {
-      "breed": "Aeon Wyvern",
-      "description": "It’s almost like time is distorted around this egg."
-    },
-    {
       "breed": "Aeria Gloris",
       "description": "This crystalline egg almost looks like you could reach into its depths."
     },
@@ -303,10 +299,6 @@
     {
       "breed": "Windrider Wyvern",
       "description": "This egg seems lonely sitting by itself."
-    },
-    {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
     },
     {
       "breed": "Ciriax Lindwyrm",
@@ -615,10 +607,6 @@
       "description": "This egg seems lonely sitting by itself."
     },
     {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
-    },
-    {
       "breed": "Baikala",
       "description": "This heavy egg has a soft, yielding shell."
     },
@@ -755,10 +743,6 @@
     {
       "breed": "Celestial",
       "description": "This translucent egg shines like starlight."
-    },
-    {
-      "breed": "Copper",
-      "description": "This egg gleams with a reddish shine."
     },
     {
       "breed": "Dark Lumina",
@@ -907,10 +891,6 @@
     {
       "breed": "Windrider Wyvern",
       "description": "This egg seems lonely sitting by itself."
-    },
-    {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
     },
     {
       "breed": "Yellow-Crowned",
@@ -1267,10 +1247,6 @@
       "description": "This egg is surrounded by beautiful flowers."
     },
     {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
-    },
-    {
       "breed": "Blancblack",
       "description": "This egg is dark with light speckles...or maybe it’s light with dark speckles?"
     },
@@ -1621,10 +1597,6 @@
       "description": "This egg seems lonely sitting by itself."
     },
     {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
-    },
-    {
       "breed": "Zarafauri",
       "description": "This partially scaled egg looks like it was placed with great care."
     },
@@ -1945,10 +1917,6 @@
     {
       "breed": "Windrider Wyvern",
       "description": "This egg seems lonely sitting by itself."
-    },
-    {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
     },
     {
       "breed": "Xol",
