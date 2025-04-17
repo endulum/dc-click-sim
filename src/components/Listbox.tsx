@@ -47,7 +47,7 @@ export function Listbox({
       }}
     >
       <p>
-        <b>{values.join(', ')}</b>
+        {values.length > 0 ? <b>{values.join(', ')}</b> : <i>None selected</i>}
       </p>
       <button id={id} onClick={() => setFlyoutOpen(!flyoutOpen)}>
         {flyoutOpen ? 'Done' : 'Select'}
