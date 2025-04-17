@@ -1,10 +1,6 @@
 {
   "alpine": [
     {
-      "breed": "Aeon Wyvern",
-      "description": "It’s almost like time is distorted around this egg."
-    },
-    {
       "breed": "Aeria Gloris",
       "description": "This crystalline egg almost looks like you could reach into its depths."
     },
@@ -127,10 +123,6 @@
     {
       "breed": "Harvest",
       "description": "This heavy egg feels slightly warm."
-    },
-    {
-      "breed": "Ice",
-      "description": "This egg has icicles forming on it."
     },
     {
       "breed": "Imperial Fleshcrowne",
@@ -303,10 +295,6 @@
     {
       "breed": "Windrider Wyvern",
       "description": "This egg seems lonely sitting by itself."
-    },
-    {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
     },
     {
       "breed": "Ciriax Lindwyrm",
@@ -615,10 +603,6 @@
       "description": "This egg seems lonely sitting by itself."
     },
     {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
-    },
-    {
       "breed": "Baikala",
       "description": "This heavy egg has a soft, yielding shell."
     },
@@ -757,10 +741,6 @@
       "description": "This translucent egg shines like starlight."
     },
     {
-      "breed": "Copper",
-      "description": "This egg gleams with a reddish shine."
-    },
-    {
       "breed": "Dark Lumina",
       "description": "This egg shines coldly in the moonlight."
     },
@@ -893,10 +873,6 @@
       "description": "This egg resembles a glowing stone."
     },
     {
-      "breed": "Thunder",
-      "description": "Whenever you go near this egg your hair stands on end."
-    },
-    {
       "breed": "Turpentine",
       "description": "This egg smells strongly of turpentine."
     },
@@ -907,10 +883,6 @@
     {
       "breed": "Windrider Wyvern",
       "description": "This egg seems lonely sitting by itself."
-    },
-    {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
     },
     {
       "breed": "Yellow-Crowned",
@@ -1267,10 +1239,6 @@
       "description": "This egg is surrounded by beautiful flowers."
     },
     {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
-    },
-    {
       "breed": "Blancblack",
       "description": "This egg is dark with light speckles...or maybe it’s light with dark speckles?"
     },
@@ -1621,10 +1589,6 @@
       "description": "This egg seems lonely sitting by itself."
     },
     {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
-    },
-    {
       "breed": "Zarafauri",
       "description": "This partially scaled egg looks like it was placed with great care."
     },
@@ -1859,10 +1823,6 @@
       "description": "This egg has an orange aura radiating from it."
     },
     {
-      "breed": "Magma",
-      "description": "This egg is almost too hot to touch."
-    },
-    {
       "breed": "Mint",
       "description": "This egg is hidden behind the others, as if it is shy."
     },
@@ -1945,10 +1905,6 @@
     {
       "breed": "Windrider Wyvern",
       "description": "This egg seems lonely sitting by itself."
-    },
-    {
-      "breed": "Xenowyrm",
-      "description": "Mana courses throughout this glassy egg."
     },
     {
       "breed": "Xol",
