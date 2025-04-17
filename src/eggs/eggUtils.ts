@@ -15,6 +15,14 @@ export const rareEggs: Egg[] = [
     description: 'Mana flows like a current through this glassy egg.',
   },
   {
+    breed: 'Xenowyrm',
+    description: 'Mana courses throughout this glassy egg.',
+  },
+  {
+    breed: 'Copper',
+    description: 'This egg gleams with a reddish shine.',
+  },
+  {
     breed: 'Cheese',
     description: 'This egg is soft and smells uncannily like cheese.',
   },

@@ -33,19 +33,25 @@ describe('consistent behavior', () => {
 
   test('with custom rare selection', () => {
     for (let i = 0; i < iterations; i++) {
-      const allRares = [...defaults[0], 'Cheese', 'Chicken', 'Paper'];
+      const allRares = [
+        ...defaults[0],
+        'Cheese',
+        'Chicken',
+        'Paper',
+        'Xenowyrm',
+        'Copper',
+      ];
       // get random rare selection
       const randomCount = Math.floor(Math.random() * allRares.length) + 1;
       const shuffledBreeds = allRares.sort(() => 0.5 - Math.random());
       const randomSelection = shuffledBreeds.slice(0, randomCount);
 
       const output = generateAllEggs(randomSelection, defaults[1]);
+      const foundEggs = Object.values(output.eggs)
+        .flat()
+        .filter((egg) => randomSelection.includes(egg.breed));
 
-      expect(
-        Object.values(output.eggs)
-          .flat()
-          .filter((egg) => randomSelection.includes(egg.breed)).length
-      ).toEqual(1);
+      expect(foundEggs.length).toEqual(1);
     }
   });
 
