@@ -1,4 +1,5 @@
-import { useState, type ChangeEvent } from 'react';
+import { useState, useRef, type ChangeEvent } from 'react';
+import { useOnClickOutside } from 'usehooks-ts';
 
 export function Listbox({
   values,
@@ -12,14 +13,37 @@ export function Listbox({
   removeValue: (item: string) => void;
 }) {
   const [flyoutOpen, setFlyoutOpen] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   const handleItemCheck = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked === false) removeValue(e.target.name);
     else addValue(e.target.name);
   };
 
+  const handleClickOutside = () => {
+    setFlyoutOpen(false);
+  };
+
+  useOnClickOutside(
+    wrapperRef as unknown as React.RefObject<HTMLDivElement>,
+    handleClickOutside,
+    'mousedown'
+  );
+
+  useOnClickOutside(
+    wrapperRef as unknown as React.RefObject<HTMLDivElement>,
+    handleClickOutside,
+    'focusout'
+  );
+
   return (
-    <div className="listbox-wrapper">
+    <div
+      className="listbox-wrapper"
+      ref={wrapperRef}
+      onKeyDown={(e) => {
+        if (e.code === 'Escape') setFlyoutOpen(false);
+      }}
+    >
       <input type="text" value={values.join(', ')} readOnly />
       <button onClick={() => setFlyoutOpen(!flyoutOpen)}>
         {flyoutOpen ? 'Close' : 'Open'}
