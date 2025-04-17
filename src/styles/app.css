@@ -391,3 +391,41 @@ p a {
 .setting {
   width: 50%;
 }
+
+.listbox-wrapper {
+  position: relative;
+  height: auto;
+  width: fit-content;
+  input {
+    margin-right: 0.25rem;
+  }
+}
+
+.listbox-flyout {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 0.25rem);
+  width: 100%;
+  background-color: white;
+  border: 1px solid;
+  color: #18181b;
+  padding: 0.5rem;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.listbox-flyout-item {
+  display: flex;
+  flex-direction: row;
+
+  label {
+    padding: 0.25rem;
+    border-radius: 5px;
+    width: 100%;
+    &:hover,
+    &.focus {
+      background-color: #d4d4d8;
+      cursor: pointer;
+    }
+  }
+}

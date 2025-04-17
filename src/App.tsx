@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useWindowSize } from 'usehooks-ts';
 
-import { Settings } from './components/Settings';
+// import { Settings } from './components/Settings';
 import { Simulator } from './components/Simulator';
 import { History } from './components/History';
 import { useSimulatorHistory } from './components/useSimulatorHistory';
 import { useSimulatorSettings } from './components/useSimulatorSettings';
+import { Listbox } from './components/Listbox';
+
+import { rareBreeds } from './eggs/eggUtils';
 
 export function App() {
   const [theme, setTheme] = useState<string>('default');
@@ -15,8 +18,8 @@ export function App() {
     removeBreed,
     addBreed,
     simPositions,
-    addPos,
-    removePos,
+    // addPos,
+    // removePos,
   } = useSimulatorSettings();
 
   const windowSize = useWindowSize();
@@ -53,12 +56,15 @@ export function App() {
         visits taken, etc.
       </p>
 
-      <Settings
-        addBreed={addBreed}
-        removeBreed={removeBreed}
-        addPos={addPos}
-        removePos={removePos}
-      />
+      <div className="space-between">
+        <h3>Breeds to simulate</h3>
+        <Listbox
+          values={simTargetBreeds}
+          allValues={rareBreeds}
+          addValue={addBreed}
+          removeValue={removeBreed}
+        />
+      </div>
 
       <div className="space-between">
         <label htmlFor="theme">
