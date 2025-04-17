@@ -363,7 +363,7 @@ p a {
   }
 }
 
-.checkboxes {
+/* .checkboxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -390,4 +390,74 @@ p a {
 
 .setting {
   width: 50%;
+} */
+
+.settings {
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content 1fr;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  select {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .settings {
+    grid-template-columns: 1fr;
+    row-gap: 0.25rem;
+    .listbox-wrapper,
+    select {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.listbox-wrapper {
+  width: fit-content;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  button {
+    font-size: 0.875rem;
+    min-width: max-content;
+  }
+}
+
+.listbox-flyout {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 0.25rem);
+  width: 100%;
+  min-width: 150px;
+  background-color: white;
+  border: 1px solid;
+  color: #18181b;
+  padding: 0.5rem;
+  overflow-y: auto;
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+.listbox-flyout-item {
+  display: flex;
+  flex-direction: row;
+  label {
+    padding: 0.25rem;
+    border-radius: 5px;
+    width: 100%;
+    input[type='checkbox'] {
+      margin-right: 0.25rem;
+    }
+    &:hover,
+    &.focus {
+      background-color: #d4d4d8;
+      cursor: pointer;
+    }
+  }
 }
