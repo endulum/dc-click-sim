@@ -90,12 +90,13 @@ p a {
     image-rendering: pixelated;
     overflow: hidden;
     margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: calc(28px + 4rem);
   }
 
   .egg {
     text-align: center;
-    width: 33.33%;
-    float: left;
     img {
       display: inline;
     }
