@@ -373,6 +373,9 @@ p a {
   select {
     width: fit-content;
   }
+  input[type='checkbox'] {
+    width: min-content;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -11,11 +11,13 @@ export function Simulator({
   positions,
   theme,
   addRound,
+  hideBreed,
 }: {
   breeds: string[];
   positions: string[];
   theme: string;
   addRound: (round: EndRoundStats) => void;
+  hideBreed: boolean;
 }) {
   const simulatorRef = useRef<HTMLDivElement>(null);
   const isHovering = useHover(
@@ -156,7 +158,7 @@ export function Simulator({
       >
         {roundStats.current ? (
           <p>
-            Find the <b>{roundStats.current.breed}</b> egg!
+            Find the {hideBreed ? '' : <b>{roundStats.current.breed} </b>}egg!
           </p>
         ) : (
           <p>

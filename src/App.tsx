@@ -21,6 +21,7 @@ export function App() {
     addPos,
     removePos,
   } = useSimulatorSettings();
+  const [hideBreed, setHideBreed] = useState(false);
 
   const windowSize = useWindowSize();
 
@@ -83,6 +84,7 @@ export function App() {
         positions={simPositions}
         theme={theme}
         addRound={addRound}
+        hideBreed={hideBreed}
       />
 
       <History rounds={rounds} wipeRounds={wipeRounds} />
@@ -127,6 +129,16 @@ export function App() {
             </option>
           ))}
         </select>
+
+        <label htmlFor="hideBreed">Hide target breed name</label>
+        <input
+          type="checkbox"
+          id="hideBreed"
+          checked={hideBreed}
+          onChange={(e) => {
+            setHideBreed(e.target.checked);
+          }}
+        />
       </div>
     </>
   );
