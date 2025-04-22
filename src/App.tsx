@@ -56,6 +56,37 @@ export function App() {
         visits taken, etc.
       </p>
 
+      {windowSize.width < 700 &&
+        ['default', 'sixties', 'portal'].includes(theme) && (
+          <p>
+            <b>The theme you have selected may not fit on your screen.</b>
+          </p>
+        )}
+
+      {simTargetBreeds.length < 1 && (
+        <p>
+          <b>You need at least one breed selected to play the simulator.</b>
+        </p>
+      )}
+
+      {simPositions.length < 1 && (
+        <p>
+          <b>
+            You need at least one egg spawn position selected to play the
+            simulator.
+          </b>
+        </p>
+      )}
+
+      <Simulator
+        breeds={simTargetBreeds}
+        positions={simPositions}
+        theme={theme}
+        addRound={addRound}
+      />
+
+      <History rounds={rounds} wipeRounds={wipeRounds} />
+
       <h2>Simulator Settings</h2>
       <div className="settings">
         <label htmlFor="breeds">Breeds to simulate</label>
@@ -97,37 +128,6 @@ export function App() {
           ))}
         </select>
       </div>
-
-      {windowSize.width < 700 &&
-        ['default', 'sixties', 'portal'].includes(theme) && (
-          <p>
-            <b>The theme you have selected may not fit on your screen.</b>
-          </p>
-        )}
-
-      {simTargetBreeds.length < 1 && (
-        <p>
-          <b>You need at least one breed selected to play the simulator.</b>
-        </p>
-      )}
-
-      {simPositions.length < 1 && (
-        <p>
-          <b>
-            You need at least one egg spawn position selected to play the
-            simulator.
-          </b>
-        </p>
-      )}
-
-      <Simulator
-        breeds={simTargetBreeds}
-        positions={simPositions}
-        theme={theme}
-        addRound={addRound}
-      />
-
-      <History rounds={rounds} wipeRounds={wipeRounds} />
     </>
   );
 }
