@@ -21,6 +21,7 @@ export function App() {
     addPos,
     removePos,
   } = useSimulatorSettings();
+  const [hideBreed, setHideBreed] = useState(false);
 
   const windowSize = useWindowSize();
 
@@ -55,6 +56,38 @@ export function App() {
         statistics pertaining to each round: time elapsed in seconds, biome
         visits taken, etc.
       </p>
+
+      {windowSize.width < 700 &&
+        ['default', 'sixties', 'portal'].includes(theme) && (
+          <p>
+            <b>The theme you have selected may not fit on your screen.</b>
+          </p>
+        )}
+
+      {simTargetBreeds.length < 1 && (
+        <p>
+          <b>You need at least one breed selected to play the simulator.</b>
+        </p>
+      )}
+
+      {simPositions.length < 1 && (
+        <p>
+          <b>
+            You need at least one egg spawn position selected to play the
+            simulator.
+          </b>
+        </p>
+      )}
+
+      <Simulator
+        breeds={simTargetBreeds}
+        positions={simPositions}
+        theme={theme}
+        addRound={addRound}
+        hideBreed={hideBreed}
+      />
+
+      <History rounds={rounds} wipeRounds={wipeRounds} />
 
       <h2>Simulator Settings</h2>
       <div className="settings">
@@ -96,38 +129,17 @@ export function App() {
             </option>
           ))}
         </select>
+
+        <label htmlFor="hideBreed">Hide target breed name</label>
+        <input
+          type="checkbox"
+          id="hideBreed"
+          checked={hideBreed}
+          onChange={(e) => {
+            setHideBreed(e.target.checked);
+          }}
+        />
       </div>
-
-      {windowSize.width < 700 &&
-        ['default', 'sixties', 'portal'].includes(theme) && (
-          <p>
-            <b>The theme you have selected may not fit on your screen.</b>
-          </p>
-        )}
-
-      {simTargetBreeds.length < 1 && (
-        <p>
-          <b>You need at least one breed selected to play the simulator.</b>
-        </p>
-      )}
-
-      {simPositions.length < 1 && (
-        <p>
-          <b>
-            You need at least one egg spawn position selected to play the
-            simulator.
-          </b>
-        </p>
-      )}
-
-      <Simulator
-        breeds={simTargetBreeds}
-        positions={simPositions}
-        theme={theme}
-        addRound={addRound}
-      />
-
-      <History rounds={rounds} wipeRounds={wipeRounds} />
     </>
   );
 }

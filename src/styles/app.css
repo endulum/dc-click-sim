@@ -357,10 +357,19 @@ p a {
     white-space: nowrap;
   }
 
-  tr > :first-child {
+  tr > :first-child,
+  tr > :nth-child(2) {
     position: sticky;
     background-color: oklch(from #d4d4d8 calc(l - 0.625) c h);
+  }
+
+  tr > :first-child {
     left: 0;
+    min-width: 30px;
+  }
+
+  tr > :nth-child(2) {
+    left: 30px;
   }
 }
 
@@ -372,6 +381,9 @@ p a {
   column-gap: 2rem;
   select {
     width: fit-content;
+  }
+  input[type='checkbox'] {
+    width: min-content;
   }
 }
 

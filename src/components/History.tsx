@@ -25,6 +25,7 @@ export function History({
           <table>
             <thead>
               <tr>
+                <td>#</td>
                 <td>Breed</td>
                 <td>Position</td>
                 <td>Total time</td>
@@ -44,9 +45,8 @@ export function History({
               {rounds
                 .map((round, index) => (
                   <tr key={round.start}>
-                    <td>
-                      #{index + 1} - {round.breed}
-                    </td>
+                    <td>{index + 1}</td>
+                    <td>{round.breed}</td>
                     <td>{round.position}</td>
                     <td>≈{msToSecs(round.time)}</td>
                     <td>{round.visits}</td>
